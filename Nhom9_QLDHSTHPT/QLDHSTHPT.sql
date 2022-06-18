@@ -1,0 +1,467 @@
+﻿CREATE DATABASE QLDHSTHPT
+GO 
+USE QLDHSTHPT
+
+
+CREATE TABLE LOP(
+	MaLop CHAR(10) PRIMARY KEY,
+	TenLop NVARCHAR(20),
+	SiSo INT,
+	MaGV CHAR(10),
+)
+
+CREATE TABLE MONHOC(
+	MaMH CHAR(10) PRIMARY KEY,
+	TenMH NVARCHAR(20),
+)
+--DROP TABLE MONHOC
+ CREATE TABLE HOCSINH(
+	MaHS CHAR(10) PRIMARY KEY,
+	TenHS NVARCHAR(30) ,
+	GioiTinh BIT,
+	NgaySinh DATETIME,
+	DiaChi NVARCHAR(50),
+	Sdt INT,
+	MaLop CHAR(10) FOREIGN KEY REFERENCES LOP(MaLop)
+)
+
+CREATE TABLE GIAOVIEN(
+	MaGV CHAR(10) PRIMARY KEY,
+	TenGV NVARCHAR(30),
+	GioiTinh BIT,
+	NgaySinh DATETIME,
+	DiaChi NVARCHAR(50),
+	Sdt CHAR(10),
+	MaMH CHAR(10) FOREIGN KEY REFERENCES MONHOC(MaMH)
+)
+
+CREATE TABLE HOCKY(
+	MaHK CHAR(10) PRIMARY KEY,
+	TenHK CHAR(20)
+)
+
+CREATE TABLE NAMHOC(
+	MaNH CHAR(10)PRIMARY KEY,
+	TenNH CHAR(10)
+)
+CREATE TABLE DANGNHAP(
+	UserID int not null identity(1,1) PRIMARY KEY,
+	Username CHAR(10),
+	MatKhau VARCHAR(50)
+)
+
+CREATE TABLE LOAIDIEM(
+	MaLoaiDiem CHAR(10) PRIMARY KEY,
+	TenLoaiDiem NVARCHAR(20),
+	HeSo INT
+)
+
+CREATE TABLE DIEMMONHOC(
+	MaHS CHAR(10) ,
+	MaMH CHAR(10) ,
+	MaHK CHAR(10) ,
+	MaNH CHAR(10) ,
+	MaLoaiDiem CHAR(10) ,
+	Diem FLOAT, CHECK(Diem>=0 AND Diem <=10),
+
+	CONSTRAINT P_DMH PRIMARY KEY(MaHS, MaMH, MaHK, MaNH, MaLoaiDiem),
+	CONSTRAINT F_DMH_HS FOREIGN KEY(MaHS)	REFERENCES HOCSINH(MaHS),
+	CONSTRAINT F_DMH_MH FOREIGN KEY(MaMH)	REFERENCES MONHOC(MaMH),
+	CONSTRAINT F_DMH_HK FOREIGN KEY(MaHK)	REFERENCES HOCKY(MaHK),
+	CONSTRAINT F_DMH_NH FOREIGN KEY(MaNH)	REFERENCES NAMHOC(MaNH),
+	CONSTRAINT F_DMH_LD FOREIGN KEY(MaLoaiDiem)	REFERENCES LOAIDIEM(MaLoaiDiem)
+)
+
+
+CREATE TABLE HANHKIEM(
+	MaHanhKiem CHAR(10) PRIMARY KEY,
+	TenHanhKiem CHAR(10)
+)
+
+CREATE TABLE HOCLUC(
+	MaHL CHAR(10) PRIMARY KEY,
+	TenHL CHAR(10)
+)
+--INSERT MONHOC
+INSERT INTO MONHOC(MaMH, TenMH)
+VALUES
+	('MH01',N'Toán'),
+	('MH02',N'Ngữ Văn'),
+	('MH03',N'Tiếng Anh'),
+	('MH04',N'Vật Lý'),
+	('MH05',N'Địa Lý'),
+	('MH06',N'Lịch Sử'),
+	('MH07',N'Hóa học'),
+	('MH08',N'GDCD'),
+	('MH09',N'Sinh học'),
+	('MH10',N'Công nghệ'),
+	('MH11',N'GDQPAN'),
+	('MH12',N'Tin học')
+SELECT * FROM MONHOC
+ 
+--INSERT GIAOVIEN
+INSERT INTO GIAOVIEN(MaGV,TenGV, GioiTinh, NgaySinh, DiaChi, Sdt, MaMH) 
+VALUES
+	('GV01',N'Trần Minh Hạnh',1,'1982-09-09','Thái Nguyên','0123456789','MH01'),
+	('GV02',N'Trần Minh Anh',1,'1972-09-09','Thái Nguyên','0123456889','MH01'),
+	('GV03',N'Trần Văn Nam',0,'1987-09-09','Ninh Bình','0234567890','MH03'),
+	('GV04',N'Nguyễn Minh Thủy',0,'1982-09-09','Thái Nguyên','0123756781','MH02'),
+	('GV05',N'Triệu Thị Linh',1,'1982-01-09','Thái Nguyên','0123056781','MH12')
+SELECT * FROM GIAOVIEN
+
+--INSERT LOP
+INSERT INTO LOP(MaLop, TenLop,SiSo, MaGV)
+VALUES
+	('L001','10A1',40,'GV01'),
+	('L002','10A2',40,'GV02'),
+	('L003','10A3',40,'GV03')
+SELECT * FROM LOP
+--INSERT HOCSINH
+
+INSERT INTO HOCSINH(MaHS, TenHS, GioiTinh, NgaySinh, DiaChi, Sdt, MaLop)
+VALUES
+	('HS01',N'Nguyễn Thị Hải',1,'2001-08-01','Thái Nguyên','0321111111','L001'),
+	('HS02',N'Nguyễn Thị Lan',1,'2001-08-11','Thái Nguyên','0372111111','L001'),
+	('HS03',N'Nguyễn Văn An',0,'2001-02-03','Thái Nguyên','0392111111','L002'),
+	('HS04',N'Mai Thị Hải',1,'2001-02-03','Thái Nguyên','0941111111','L002'),
+	('HS05',N'Nguyễn Minh Anh',0,'2001-01-01','Thái Nguyên','0339111111','L003'),
+	('HS06',N'Nguyễn Hương Giang',1,'2001-09-01','Thái Nguyên','0330911111','L003')
+SELECT * FROM HOCSINH 
+--INSERT HOCKY
+INSERT INTO HOCKY(MaHK, TenHK)
+VALUES
+	('HK01',N'Học kỳ 1'),
+	('HK02',N'Học kỳ 2')	
+SELECT* FROM HOCKY
+--INSERT INTO DANGNHAP
+INSERT INTO DANGNHAP(Username, MatKhau)
+VALUES
+	('HS01','HS01123'),
+	('HS02','HS02123'),
+	('HS03','HS03123'),
+	('HS04','HS04123'),
+	('HS05','HS05123'),
+	('HS06','HS06123'),
+	('GV01','GV01123'),
+	('GV02','GV02123')
+SELECT * FROM DANGNHAP
+--INSERT NAMHOC
+INSERT INTO NAMHOC(MaNH, TenNH)
+VALUES
+	('NH01','2019-2020'),
+	('NH02','2020-2021')
+SELECT * FROM NAMHOC
+--INSERT LOAIDIEM
+INSERT INTO LOAIDIEM(MaLoaiDiem, TenLoaiDiem, HeSo)
+VALUES 
+	('LD01',N'Điểm miệng',1),
+	('LD02',N'Điểm 15p',1),
+	('LD03',N'Điểm 45p',2),
+	('LD04',N'Điểm thi',3)
+SELECT * FROM LOAIDIEM
+--INSERT DIEMMONHOC
+	---Diem hoc ky 1 HS1
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS01','MH01','HK01','NH01','LD01',7),
+	('HS01','MH01','HK01','NH01','LD02',8),
+	('HS01','MH01','HK01','NH01','LD03',9),
+	('HS01','MH01','HK01','NH01','LD04',6),
+
+	('HS01','MH02','HK01','NH01','LD01',7),
+	('HS01','MH02','HK01','NH01','LD02',3),
+	('HS01','MH02','HK01','NH01','LD03',9),
+	('HS01','MH02','HK01','NH01','LD04',8),
+
+	('HS01','MH03','HK01','NH01','LD01',7),
+	('HS01','MH03','HK01','NH01','LD02',7.5),
+	('HS01','MH03','HK01','NH01','LD03',5),
+	('HS01','MH03','HK01','NH01','LD04',8),
+
+	('HS01','MH04','HK01','NH01','LD01',7),
+	('HS01','MH04','HK01','NH01','LD02',8.5),
+	('HS01','MH04','HK01','NH01','LD03',9),
+	('HS01','MH04','HK01','NH01','LD04',8),
+
+	('HS01','MH05','HK01','NH01','LD01',6),
+	('HS01','MH05','HK01','NH01','LD02',7.5),
+	('HS01','MH05','HK01','NH01','LD03',9),
+	('HS01','MH05','HK01','NH01','LD04',8),
+
+	('HS01','MH06','HK01','NH01','LD01',8),
+	('HS01','MH06','HK01','NH01','LD02',9),
+	('HS01','MH06','HK01','NH01','LD03',7),
+	('HS01','MH06','HK01','NH01','LD04',9.5),
+
+	('HS01','MH07','HK01','NH01','LD01',7),
+	('HS01','MH07','HK01','NH01','LD02',6.5),
+	('HS01','MH07','HK01','NH01','LD03',5.5),
+	('HS01','MH07','HK01','NH01','LD04',8),
+
+	('HS01','MH08','HK01','NH01','LD01',8),
+	('HS01','MH08','HK01','NH01','LD02',7.5),
+	('HS01','MH08','HK01','NH01','LD03',5),
+	('HS01','MH08','HK01','NH01','LD04',8),
+
+	('HS01','MH09','HK01','NH01','LD01',4),
+	('HS01','MH09','HK01','NH01','LD02',7.5),
+	('HS01','MH09','HK01','NH01','LD03',5),
+	('HS01','MH09','HK01','NH01','LD04',8),
+
+	('HS01','MH10','HK01','NH01','LD01',7),
+	('HS01','MH10','HK01','NH01','LD02',7.5),
+	('HS01','MH10','HK01','NH01','LD03',5),
+	('HS01','MH10','HK01','NH01','LD04',7),
+
+	('HS01','MH11','HK01','NH01','LD01',7),
+	('HS01','MH11','HK01','NH01','LD02',7.5),
+	('HS01','MH11','HK01','NH01','LD03',7),
+	('HS01','MH11','HK01','NH01','LD04',7),
+
+	('HS01','MH12','HK01','NH01','LD01',7),
+	('HS01','MH12','HK01','NH01','LD02',7.5),
+	('HS01','MH12','HK01','NH01','LD03',5),
+	('HS01','MH12','HK01','NH01','LD04',9)
+SELECT * FROM DIEMMONHOC
+	--Diem Hoc ky 2 HS1
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS01','MH01','HK02','NH01','LD01',7),
+	('HS01','MH01','HK02','NH01','LD02',8),
+	('HS01','MH01','HK02','NH01','LD03',7),
+	('HS01','MH01','HK02','NH01','LD04',6),
+
+	('HS01','MH02','HK02','NH01','LD01',7),
+	('HS01','MH02','HK02','NH01','LD02',7),
+	('HS01','MH02','HK02','NH01','LD03',9),
+	('HS01','MH02','HK02','NH01','LD04',8),
+
+	('HS01','MH03','HK02','NH01','LD01',7),
+	('HS01','MH03','HK02','NH01','LD02',7.5),
+	('HS01','MH03','HK02','NH01','LD03',9),
+	('HS01','MH03','HK02','NH01','LD04',8),
+
+	('HS01','MH04','HK02','NH01','LD01',7),
+	('HS01','MH04','HK02','NH01','LD02',8.5),
+	('HS01','MH04','HK02','NH01','LD03',9),
+	('HS01','MH04','HK02','NH01','LD04',8),
+
+	('HS01','MH05','HK02','NH01','LD01',6),
+	('HS01','MH05','HK02','NH01','LD02',8),
+	('HS01','MH05','HK02','NH01','LD03',9),
+	('HS01','MH05','HK02','NH01','LD04',8),
+
+	('HS01','MH06','HK02','NH01','LD01',8),
+	('HS01','MH06','HK02','NH01','LD02',9),
+	('HS01','MH06','HK02','NH01','LD03',8),
+	('HS01','MH06','HK02','NH01','LD04',9.5),
+
+	('HS01','MH07','HK02','NH01','LD01',7),
+	('HS01','MH07','HK02','NH01','LD02',6.5),
+	('HS01','MH07','HK02','NH01','LD03',8),
+	('HS01','MH07','HK02','NH01','LD04',8),
+
+	('HS01','MH08','HK02','NH01','LD01',8),
+	('HS01','MH08','HK02','NH01','LD02',7.5),
+	('HS01','MH08','HK02','NH01','LD03',5),
+	('HS01','MH08','HK02','NH01','LD04',8.5),
+
+	('HS01','MH09','HK02','NH01','LD01',8),
+	('HS01','MH09','HK02','NH01','LD02',7.5),
+	('HS01','MH09','HK02','NH01','LD03',5),
+	('HS01','MH09','HK02','NH01','LD04',6),
+
+	('HS01','MH10','HK02','NH01','LD01',7),
+	('HS01','MH10','HK02','NH01','LD02',7.5),
+	('HS01','MH10','HK02','NH01','LD03',5),
+	('HS01','MH10','HK02','NH01','LD04',8),
+
+	('HS01','MH11','HK02','NH01','LD01',7),
+	('HS01','MH11','HK02','NH01','LD02',7.5),
+	('HS01','MH11','HK02','NH01','LD03',7),
+	('HS01','MH11','HK02','NH01','LD04',6),
+
+	('HS01','MH12','HK02','NH01','LD01',7),
+	('HS01','MH12','HK02','NH01','LD02',7.5),
+	('HS01','MH12','HK02','NH01','LD03',5),
+	('HS01','MH12','HK02','NH01','LD04',7)
+
+	--Diem hoc ky 1 HS2
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS02','MH01','HK01','NH01','LD01',7),
+	('HS02','MH01','HK01','NH01','LD02',8),
+	('HS02','MH01','HK01','NH01','LD03',9),
+	('HS02','MH01','HK01','NH01','LD04',6.5),
+
+	('HS02','MH02','HK01','NH01','LD01',8),
+	('HS02','MH02','HK01','NH01','LD02',6),
+	('HS02','MH02','HK01','NH01','LD03',9),
+	('HS02','MH02','HK01','NH01','LD04',8.5),
+
+	('HS02','MH03','HK01','NH01','LD01',7),
+	('HS02','MH03','HK01','NH01','LD02',7.5),
+	('HS02','MH03','HK01','NH01','LD03',9),
+	('HS02','MH03','HK01','NH01','LD04',8),
+
+	('HS02','MH04','HK01','NH01','LD01',7),
+	('HS02','MH04','HK01','NH01','LD02',8.5),
+	('HS02','MH04','HK01','NH01','LD03',9),
+	('HS02','MH04','HK01','NH01','LD04',8.5),
+
+	('HS02','MH05','HK01','NH01','LD01',6),
+	('HS02','MH05','HK01','NH01','LD02',7.5),
+	('HS02','MH05','HK01','NH01','LD03',9),
+	('HS02','MH05','HK01','NH01','LD04',5),
+
+	('HS02','MH06','HK01','NH01','LD01',8),
+	('HS02','MH06','HK01','NH01','LD02',6),
+	('HS02','MH06','HK01','NH01','LD03',7),
+	('HS02','MH06','HK01','NH01','LD04',5),
+
+	('HS02','MH07','HK01','NH01','LD01',7),
+	('HS02','MH07','HK01','NH01','LD02',6.5),
+	('HS02','MH07','HK01','NH01','LD03',5.5),
+	('HS02','MH07','HK01','NH01','LD04',6),
+
+	('HS02','MH08','HK01','NH01','LD01',8),
+	('HS02','MH08','HK01','NH01','LD02',5),
+	('HS02','MH08','HK01','NH01','LD03',5),
+	('HS02','MH08','HK01','NH01','LD04',6),
+
+	('HS02','MH09','HK01','NH01','LD01',4),
+	('HS02','MH09','HK01','NH01','LD02',7.5),
+	('HS02','MH09','HK01','NH01','LD03',5),
+	('HS02','MH09','HK01','NH01','LD04',5),
+
+	('HS02','MH10','HK01','NH01','LD01',7),
+	('HS02','MH10','HK01','NH01','LD02',5),
+	('HS02','MH10','HK01','NH01','LD03',5),
+	('HS02','MH10','HK01','NH01','LD04',7),
+
+	('HS02','MH11','HK01','NH01','LD01',7),
+	('HS02','MH11','HK01','NH01','LD02',7.5),
+	('HS02','MH11','HK01','NH01','LD03',7),
+	('HS02','MH11','HK01','NH01','LD04',5),
+
+	('HS02','MH12','HK01','NH01','LD01',7),
+	('HS02','MH12','HK01','NH01','LD02',7.5),
+	('HS02','MH12','HK01','NH01','LD03',5),
+	('HS02','MH12','HK01','NH01','LD04',7)
+
+	--Diem Hoc ky 2 HS2
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS02','MH01','HK02','NH01','LD01',5),
+	('HS02','MH01','HK02','NH01','LD02',8),
+	('HS02','MH01','HK02','NH01','LD03',7),
+	('HS02','MH01','HK02','NH01','LD04',6),
+
+	('HS02','MH02','HK02','NH01','LD01',7),
+	('HS02','MH02','HK02','NH01','LD02',7),
+	('HS02','MH02','HK02','NH01','LD03',9),
+	('HS02','MH02','HK02','NH01','LD04',5),
+
+	('HS02','MH03','HK02','NH01','LD01',7),
+	('HS02','MH03','HK02','NH01','LD02',7.5),
+	('HS02','MH03','HK02','NH01','LD03',5),
+	('HS02','MH03','HK02','NH01','LD04',8),
+
+	('HS02','MH04','HK02','NH01','LD01',7),
+	('HS02','MH04','HK02','NH01','LD02',8.5),
+	('HS02','MH04','HK02','NH01','LD03',9),
+	('HS02','MH04','HK02','NH01','LD04',5),
+
+	('HS02','MH05','HK02','NH01','LD01',6),
+	('HS02','MH05','HK02','NH01','LD02',8),
+	('HS02','MH05','HK02','NH01','LD03',9),
+	('HS02','MH05','HK02','NH01','LD04',8),
+
+	('HS02','MH06','HK02','NH01','LD01',8),
+	('HS02','MH06','HK02','NH01','LD02',9),
+	('HS02','MH06','HK02','NH01','LD03',8),
+	('HS02','MH06','HK02','NH01','LD04',9.5),
+
+	('HS02','MH07','HK02','NH01','LD01',7),
+	('HS02','MH07','HK02','NH01','LD02',6.5),
+	('HS02','MH07','HK02','NH01','LD03',8),
+	('HS02','MH07','HK02','NH01','LD04',8),
+
+	('HS02','MH08','HK02','NH01','LD01',8),
+	('HS02','MH08','HK02','NH01','LD02',7.5),
+	('HS02','MH08','HK02','NH01','LD03',5),
+	('HS02','MH08','HK02','NH01','LD04',8.5),
+
+	('HS02','MH09','HK02','NH01','LD01',8),
+	('HS02','MH09','HK02','NH01','LD02',7.5),
+	('HS02','MH09','HK02','NH01','LD03',5),
+	('HS02','MH09','HK02','NH01','LD04',6),
+
+	('HS02','MH10','HK02','NH01','LD01',7),
+	('HS02','MH10','HK02','NH01','LD02',7.5),
+	('HS02','MH10','HK02','NH01','LD03',5),
+	('HS02','MH10','HK02','NH01','LD04',8),
+
+	('HS02','MH11','HK02','NH01','LD01',7),
+	('HS02','MH11','HK02','NH01','LD02',7.5),
+	('HS02','MH11','HK02','NH01','LD03',7),
+	('HS02','MH11','HK02','NH01','LD04',6),
+
+	('HS02','MH12','HK02','NH01','LD01',7),
+	('HS02','MH12','HK02','NH01','LD02',7.5),
+	('HS02','MH12','HK02','NH01','LD03',5),
+	('HS02','MH12','HK02','NH01','LD04',5)
+----Diem_Trung_Binh_Mon_HK1 của từng môn/học sinh-
+CREATE VIEW Diem_Hoc_Sinh_HK1 AS 
+SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK1 FROM DIEMMONHOC dmh
+	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
+	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
+	JOIN HOCKY hk ON hk.MaHK = dmh.MaHK
+	JOIN LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
+	WHERE hk.MaHK='HK01'
+GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH
+
+SELECT * FROM Diem_Hoc_Sinh_HK1
+DROP VIEW Diem_Hoc_Sinh_HK1
+GO
+--Diem_Trung_Binh_HK1 cua tung hoc sinh------------------------
+CREATE VIEW Diem_TBHK1 AS
+SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , ROUND(SUM(DTBM_HK1)/12,2) AS Diem_Trung_Binh_Hoc_Ky1 FROM Diem_Hoc_Sinh_HK1
+GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh
+GO
+
+SELECT * FROM dbo.Diem_TBHK1
+------------------------Diem_Trung_Binh_Mon_HK2 CỦA TỪNG MÔN/HS------------------------
+CREATE VIEW Diem_Hoc_Sinh_HK2 AS 
+SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK2 FROM  DIEMMONHOC dmh
+	JOIN dbo.HOCSINH hs ON hs.MaHS = dmh.MaHS
+	JOIN dbo.MONHOC mh ON mh.MaMH = dmh.MaMH
+	JOIN dbo.HOCKY hk ON hk.MaHK = dmh.MaHK
+	JOIN dbo.LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
+	WHERE hk.MaHK='HK02'
+GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH
+GO
+
+SELECT * FROM Diem_Hoc_Sinh_HK2
+
+DROP VIEW Diem_Hoc_Sinh_HK2
+
+------------------------Diem_Trung_Binh_HK2 CỦA TỪNG HS------------------------
+CREATE VIEW Diem_TBHK2 AS
+SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , ROUND(SUM(DTBM_HK2)/12,2) AS Diem_Trung_Binh_Hoc_Ky2 FROM Diem_Hoc_Sinh_HK2
+GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh
+GO
+
+SELECT * FROM Diem_TBHK2
+
+DROP VIEW Diem_TBHK2
+
+------------------------Diem_Trung_Binh_Ca_Nam------------------------
+CREATE VIEW DTB AS
+SELECT tb1.Ma_Hoc_Sinh, tb1.Ten_Hoc_Sinh, ROUND((Diem_Trung_Binh_Hoc_Ky2*2+Diem_Trung_Binh_Hoc_Ky1)/3,2) AS Diem_Trung_Binh_Ca_Nam FROM Diem_TBHK2 tb2 
+JOIN Diem_TBHK1 tb1 ON tb1.Ma_Hoc_Sinh=tb2.Ma_Hoc_Sinh
+GO
+
+SELECT * FROM DTB
+
+DROP VIEW DTB

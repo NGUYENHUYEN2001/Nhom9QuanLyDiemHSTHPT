@@ -1,0 +1,10 @@
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe.config
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.pdb
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.AssemblyReference.cache
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Form1.resources
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Properties.Resources.resources
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.GenerateResource.cache
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
