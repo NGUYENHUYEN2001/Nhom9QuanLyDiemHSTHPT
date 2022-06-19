@@ -74,8 +74,16 @@ CREATE TABLE DIEMMONHOC(
 
 
 CREATE TABLE HANHKIEM(
-	MaHanhKiem CHAR(10) PRIMARY KEY,
-	TenHanhKiem CHAR(10)
+	MaHanhKiem CHAR(10),
+	TenHanhKiem CHAR(10),
+	MaNH CHAR(10),
+	MaHK CHAR(10),
+	MaHS CHAR(10),
+	CONSTRAINT PK PRIMARY KEY(MaHS, MaHK, MaNH, MaHanhKiem ),
+	CONSTRAINT HS FOREIGN KEY(MaHS)	REFERENCES HOCSINH(MaHS),
+	CONSTRAINT NH FOREIGN KEY(MaNH)	REFERENCES NAMHOC(MaNH),
+	CONSTRAINT HK FOREIGN KEY(MaHK)	REFERENCES HOCKY(MaHK),
+
 )
 
 CREATE TABLE HOCLUC(
@@ -411,6 +419,36 @@ VALUES
 	('HS02','MH12','HK02','NH01','LD02',7.5),
 	('HS02','MH12','HK02','NH01','LD03',5),
 	('HS02','MH12','HK02','NH01','LD04',5)
+
+insert into HANHKIEM(MaHanhKiem, TenHanhKiem, MaNH, MaHK, MaHS)
+ VALUES 
+	('T',N'Tốt','NH01', 'HK01', 'HS01'),
+	('K',N'Khá','NH01', 'HK02', 'HS01'),
+	('TB',N'Trung Bình','NH01', 'HK01', 'HS02'),
+	('Y',N'Yếu','NH01', 'HK02', 'HS02'),
+	('T',N'Tốt','NH01', 'HK01', 'HS03'),
+	('K',N'Khá','NH01', 'HK02', 'HS03'),
+	('T',N'Tốt','NH01', 'HK01', 'HS04'),
+	('T',N'Tốt','NH01', 'HK02', 'HS04'),
+	('T',N'Tốt','NH01', 'HK01', 'HS05'),
+	('T',N'Tốt','NH01', 'HK02', 'HS05'),
+	('T',N'Tốt','NH01', 'HK01', 'HS06'),
+	('T',N'Tốt','NH01', 'HK02', 'HS06'),
+
+	('T',N'Tốt','NH02', 'HK01', 'HS01'),
+	('T',N'Tốt','NH02', 'HK02', 'HS01'),
+	('TB',N'Trung Bình','NH02', 'HK01', 'HS02'),
+	('Y',N'Yếu','NH02', 'HK02', 'HS02'),
+	('T',N'Tốt','NH02', 'HK01', 'HS03'),
+	('K',N'Khá','NH02', 'HK02', 'HS03'),
+	('T',N'Tốt','NH02', 'HK01', 'HS04'),
+	('K',N'Khá','NH02', 'HK02', 'HS04'),
+	('T',N'Tốt','NH02', 'HK01', 'HS05'),
+	('T',N'Tốt','NH02', 'HK02', 'HS05'),
+	('K',N'Khá','NH02', 'HK01', 'HS06'),
+	('T',N'Tốt','NH02', 'HK02', 'HS06')
+
+select * from HANHKIEM
 ----Diem_Trung_Binh_Mon_HK1 của từng môn/học sinh-
 CREATE VIEW Diem_Hoc_Sinh_HK1 AS 
 SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK1 FROM DIEMMONHOC dmh

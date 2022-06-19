@@ -8,3 +8,13 @@ C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csp
 C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
 C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
 C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe.config
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.pdb
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.AssemblyReference.cache
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Form1.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Properties.Resources.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.GenerateResource.cache
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
