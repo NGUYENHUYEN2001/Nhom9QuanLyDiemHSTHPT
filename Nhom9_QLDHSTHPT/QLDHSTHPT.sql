@@ -167,132 +167,132 @@ VALUES
 	('LD03',N'Điểm 45p',2),
 	('LD04',N'Điểm thi',3)
 SELECT * FROM LOAIDIEM
---INSERT DIEMMONHOC
+--INSERT DIEMMONHOC NAM HOC NH01
 	---Diem hoc ky 1 HS1
 INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
 VALUES
-	('HS01','MH01','HK01','NH01','LD01',7),
-	('HS01','MH01','HK01','NH01','LD02',8),
+	('HS01','MH01','HK01','NH01','LD01',10),
+	('HS01','MH01','HK01','NH01','LD02',9),
 	('HS01','MH01','HK01','NH01','LD03',9),
-	('HS01','MH01','HK01','NH01','LD04',6),
+	('HS01','MH01','HK01','NH01','LD04',9.5),
 
-	('HS01','MH02','HK01','NH01','LD01',7),
-	('HS01','MH02','HK01','NH01','LD02',3),
+	('HS01','MH02','HK01','NH01','LD01',9),
+	('HS01','MH02','HK01','NH01','LD02',10),
 	('HS01','MH02','HK01','NH01','LD03',9),
-	('HS01','MH02','HK01','NH01','LD04',8),
+	('HS01','MH02','HK01','NH01','LD04',9.5),
 
-	('HS01','MH03','HK01','NH01','LD01',7),
-	('HS01','MH03','HK01','NH01','LD02',7.5),
-	('HS01','MH03','HK01','NH01','LD03',5),
-	('HS01','MH03','HK01','NH01','LD04',8),
+	('HS01','MH03','HK01','NH01','LD01',10),
+	('HS01','MH03','HK01','NH01','LD02',9),
+	('HS01','MH03','HK01','NH01','LD03',9),
+	('HS01','MH03','HK01','NH01','LD04',9),
 
-	('HS01','MH04','HK01','NH01','LD01',7),
+	('HS01','MH04','HK01','NH01','LD01',9),
 	('HS01','MH04','HK01','NH01','LD02',8.5),
 	('HS01','MH04','HK01','NH01','LD03',9),
 	('HS01','MH04','HK01','NH01','LD04',8),
 
-	('HS01','MH05','HK01','NH01','LD01',6),
-	('HS01','MH05','HK01','NH01','LD02',7.5),
+	('HS01','MH05','HK01','NH01','LD01',10),
+	('HS01','MH05','HK01','NH01','LD02',9),
 	('HS01','MH05','HK01','NH01','LD03',9),
 	('HS01','MH05','HK01','NH01','LD04',8),
 
 	('HS01','MH06','HK01','NH01','LD01',8),
 	('HS01','MH06','HK01','NH01','LD02',9),
-	('HS01','MH06','HK01','NH01','LD03',7),
+	('HS01','MH06','HK01','NH01','LD03',8),
 	('HS01','MH06','HK01','NH01','LD04',9.5),
 
-	('HS01','MH07','HK01','NH01','LD01',7),
-	('HS01','MH07','HK01','NH01','LD02',6.5),
-	('HS01','MH07','HK01','NH01','LD03',5.5),
-	('HS01','MH07','HK01','NH01','LD04',8),
-
-	('HS01','MH08','HK01','NH01','LD01',8),
-	('HS01','MH08','HK01','NH01','LD02',7.5),
-	('HS01','MH08','HK01','NH01','LD03',5),
+	('HS01','MH07','HK01','NH01','LD01',10),
+	('HS01','MH07','HK01','NH01','LD02',10),
+	('HS01','MH07','HK01','NH01','LD03',9),
+	('HS01','MH07','HK01','NH01','LD04',8.5),
+	
+	('HS01','MH08','HK01','NH01','LD01',9),
+	('HS01','MH08','HK01','NH01','LD02',9),
+	('HS01','MH08','HK01','NH01','LD03',8.5),
 	('HS01','MH08','HK01','NH01','LD04',8),
 
-	('HS01','MH09','HK01','NH01','LD01',4),
-	('HS01','MH09','HK01','NH01','LD02',7.5),
-	('HS01','MH09','HK01','NH01','LD03',5),
-	('HS01','MH09','HK01','NH01','LD04',8),
+	('HS01','MH09','HK01','NH01','LD01',10),
+	('HS01','MH09','HK01','NH01','LD02',9),
+	('HS01','MH09','HK01','NH01','LD03',8.5),
+	('HS01','MH09','HK01','NH01','LD04',9),
 
-	('HS01','MH10','HK01','NH01','LD01',7),
-	('HS01','MH10','HK01','NH01','LD02',7.5),
-	('HS01','MH10','HK01','NH01','LD03',5),
-	('HS01','MH10','HK01','NH01','LD04',7),
+	('HS01','MH10','HK01','NH01','LD01',9),
+	('HS01','MH10','HK01','NH01','LD02',9),
+	('HS01','MH10','HK01','NH01','LD03',9),
+	('HS01','MH10','HK01','NH01','LD04',10),
 
-	('HS01','MH11','HK01','NH01','LD01',7),
-	('HS01','MH11','HK01','NH01','LD02',7.5),
-	('HS01','MH11','HK01','NH01','LD03',7),
-	('HS01','MH11','HK01','NH01','LD04',7),
+	('HS01','MH11','HK01','NH01','LD01',10),
+	('HS01','MH11','HK01','NH01','LD02',9),
+	('HS01','MH11','HK01','NH01','LD03',8),
+	('HS01','MH11','HK01','NH01','LD04',9),
 
-	('HS01','MH12','HK01','NH01','LD01',7),
-	('HS01','MH12','HK01','NH01','LD02',7.5),
-	('HS01','MH12','HK01','NH01','LD03',5),
+	('HS01','MH12','HK01','NH01','LD01',9),
+	('HS01','MH12','HK01','NH01','LD02',9),
+	('HS01','MH12','HK01','NH01','LD03',9),
 	('HS01','MH12','HK01','NH01','LD04',9)
 SELECT * FROM DIEMMONHOC
 	--Diem Hoc ky 2 HS1
 INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
 VALUES
-	('HS01','MH01','HK02','NH01','LD01',7),
-	('HS01','MH01','HK02','NH01','LD02',8),
-	('HS01','MH01','HK02','NH01','LD03',7),
-	('HS01','MH01','HK02','NH01','LD04',6),
+	('HS01','MH01','HK02','NH01','LD01',9),
+	('HS01','MH01','HK02','NH01','LD02',10),
+	('HS01','MH01','HK02','NH01','LD03',9),
+	('HS01','MH01','HK02','NH01','LD04',9),
 
-	('HS01','MH02','HK02','NH01','LD01',7),
-	('HS01','MH02','HK02','NH01','LD02',7),
+	('HS01','MH02','HK02','NH01','LD01',10),
+	('HS01','MH02','HK02','NH01','LD02',10),
 	('HS01','MH02','HK02','NH01','LD03',9),
-	('HS01','MH02','HK02','NH01','LD04',8),
+	('HS01','MH02','HK02','NH01','LD04',9),
 
-	('HS01','MH03','HK02','NH01','LD01',7),
-	('HS01','MH03','HK02','NH01','LD02',7.5),
+	('HS01','MH03','HK02','NH01','LD01',10),
+	('HS01','MH03','HK02','NH01','LD02',10),
 	('HS01','MH03','HK02','NH01','LD03',9),
 	('HS01','MH03','HK02','NH01','LD04',8),
 
-	('HS01','MH04','HK02','NH01','LD01',7),
-	('HS01','MH04','HK02','NH01','LD02',8.5),
+	('HS01','MH04','HK02','NH01','LD01',10),
+	('HS01','MH04','HK02','NH01','LD02',9),
 	('HS01','MH04','HK02','NH01','LD03',9),
-	('HS01','MH04','HK02','NH01','LD04',8),
+	('HS01','MH04','HK02','NH01','LD04',8.5),
 
-	('HS01','MH05','HK02','NH01','LD01',6),
-	('HS01','MH05','HK02','NH01','LD02',8),
+	('HS01','MH05','HK02','NH01','LD01',9),
+	('HS01','MH05','HK02','NH01','LD02',9),
 	('HS01','MH05','HK02','NH01','LD03',9),
-	('HS01','MH05','HK02','NH01','LD04',8),
+	('HS01','MH05','HK02','NH01','LD04',10),
 
-	('HS01','MH06','HK02','NH01','LD01',8),
+	('HS01','MH06','HK02','NH01','LD01',10),
 	('HS01','MH06','HK02','NH01','LD02',9),
 	('HS01','MH06','HK02','NH01','LD03',8),
 	('HS01','MH06','HK02','NH01','LD04',9.5),
 
-	('HS01','MH07','HK02','NH01','LD01',7),
-	('HS01','MH07','HK02','NH01','LD02',6.5),
-	('HS01','MH07','HK02','NH01','LD03',8),
-	('HS01','MH07','HK02','NH01','LD04',8),
+	('HS01','MH07','HK02','NH01','LD01',10),
+	('HS01','MH07','HK02','NH01','LD02',10),
+	('HS01','MH07','HK02','NH01','LD03',9),
+	('HS01','MH07','HK02','NH01','LD04',9),
 
-	('HS01','MH08','HK02','NH01','LD01',8),
-	('HS01','MH08','HK02','NH01','LD02',7.5),
-	('HS01','MH08','HK02','NH01','LD03',5),
-	('HS01','MH08','HK02','NH01','LD04',8.5),
+	('HS01','MH08','HK02','NH01','LD01',10),
+	('HS01','MH08','HK02','NH01','LD02',9),
+	('HS01','MH08','HK02','NH01','LD03',9),
+	('HS01','MH08','HK02','NH01','LD04',9),
 
-	('HS01','MH09','HK02','NH01','LD01',8),
-	('HS01','MH09','HK02','NH01','LD02',7.5),
-	('HS01','MH09','HK02','NH01','LD03',5),
-	('HS01','MH09','HK02','NH01','LD04',6),
+	('HS01','MH09','HK02','NH01','LD01',9),
+	('HS01','MH09','HK02','NH01','LD02',9),
+	('HS01','MH09','HK02','NH01','LD03',10),
+	('HS01','MH09','HK02','NH01','LD04',10),
 
-	('HS01','MH10','HK02','NH01','LD01',7),
-	('HS01','MH10','HK02','NH01','LD02',7.5),
-	('HS01','MH10','HK02','NH01','LD03',5),
-	('HS01','MH10','HK02','NH01','LD04',8),
+	('HS01','MH10','HK02','NH01','LD01',10),
+	('HS01','MH10','HK02','NH01','LD02',8),
+	('HS01','MH10','HK02','NH01','LD03',9),
+	('HS01','MH10','HK02','NH01','LD04',9),
 
 	('HS01','MH11','HK02','NH01','LD01',7),
-	('HS01','MH11','HK02','NH01','LD02',7.5),
-	('HS01','MH11','HK02','NH01','LD03',7),
-	('HS01','MH11','HK02','NH01','LD04',6),
+	('HS01','MH11','HK02','NH01','LD02',8),
+	('HS01','MH11','HK02','NH01','LD03',8),
+	('HS01','MH11','HK02','NH01','LD04',8),
 
-	('HS01','MH12','HK02','NH01','LD01',7),
-	('HS01','MH12','HK02','NH01','LD02',7.5),
-	('HS01','MH12','HK02','NH01','LD03',5),
-	('HS01','MH12','HK02','NH01','LD04',7)
+	('HS01','MH12','HK02','NH01','LD01',9),
+	('HS01','MH12','HK02','NH01','LD02',9),
+	('HS01','MH12','HK02','NH01','LD03',9.5),
+	('HS01','MH12','HK02','NH01','LD04',9)
 
 	--Diem hoc ky 1 HS2
 INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
@@ -419,87 +419,597 @@ VALUES
 	('HS02','MH12','HK02','NH01','LD02',7.5),
 	('HS02','MH12','HK02','NH01','LD03',5),
 	('HS02','MH12','HK02','NH01','LD04',5)
+--HS 3
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS03','MH01','HK01','NH01','LD01',10),
+	('HS03','MH01','HK01','NH01','LD02',9),
+	('HS03','MH01','HK01','NH01','LD03',9),
+	('HS03','MH01','HK01','NH01','LD04',10),
 
+	('HS03','MH02','HK01','NH01','LD01',9),
+	('HS03','MH02','HK01','NH01','LD02',9),
+	('HS03','MH02','HK01','NH01','LD03',9),
+	('HS03','MH02','HK01','NH01','LD04',9),
+
+	('HS03','MH03','HK01','NH01','LD01',10),
+	('HS03','MH03','HK01','NH01','LD02',10),
+	('HS03','MH03','HK01','NH01','LD03',9),
+	('HS03','MH03','HK01','NH01','LD04',9.5),
+
+	('HS03','MH04','HK01','NH01','LD01',9),
+	('HS03','MH04','HK01','NH01','LD02',8.5),
+	('HS03','MH04','HK01','NH01','LD03',9),
+	('HS03','MH04','HK01','NH01','LD04',8.5),
+
+	('HS03','MH05','HK01','NH01','LD01',10),
+	('HS03','MH05','HK01','NH01','LD02',9),
+	('HS03','MH05','HK01','NH01','LD03',9),
+	('HS03','MH05','HK01','NH01','LD04',9.5),
+
+	('HS03','MH06','HK01','NH01','LD01',10),
+	('HS03','MH06','HK01','NH01','LD02',9),
+	('HS03','MH06','HK01','NH01','LD03',9),
+	('HS03','MH06','HK01','NH01','LD04',10),
+
+	('HS03','MH07','HK01','NH01','LD01',10),
+	('HS03','MH07','HK01','NH01','LD02',9),
+	('HS03','MH07','HK01','NH01','LD03',8.5),
+	('HS03','MH07','HK01','NH01','LD04',8),
+
+	('HS03','MH08','HK01','NH01','LD01',9),
+	('HS03','MH08','HK01','NH01','LD02',10),
+	('HS03','MH08','HK01','NH01','LD03',9),
+	('HS03','MH08','HK01','NH01','LD04',9),
+
+	('HS03','MH09','HK01','NH01','LD01',10),
+	('HS03','MH09','HK01','NH01','LD02',9),
+	('HS03','MH09','HK01','NH01','LD03',10),
+	('HS03','MH09','HK01','NH01','LD04',10),
+
+	('HS03','MH10','HK01','NH01','LD01',9),
+	('HS03','MH10','HK01','NH01','LD02',9),
+	('HS03','MH10','HK01','NH01','LD03',9),
+	('HS03','MH10','HK01','NH01','LD04',9),
+
+	('HS03','MH11','HK01','NH01','LD01',9),
+	('HS03','MH11','HK01','NH01','LD02',10),
+	('HS03','MH11','HK01','NH01','LD03',7.5),
+	('HS03','MH11','HK01','NH01','LD04',9),
+
+	('HS03','MH12','HK01','NH01','LD01',9),
+	('HS03','MH12','HK01','NH01','LD02',9.5),
+	('HS03','MH12','HK01','NH01','LD03',9),
+	('HS03','MH12','HK01','NH01','LD04',10),
+--HK2 HS 3
+	('HS03','MH01','HK02','NH01','LD01',10),
+	('HS03','MH01','HK02','NH01','LD02',8),
+	('HS03','MH01','HK02','NH01','LD03',7),
+	('HS03','MH01','HK02','NH01','LD04',9),
+
+	('HS03','MH02','HK02','NH01','LD01',9),
+	('HS03','MH02','HK02','NH01','LD02',7),
+	('HS03','MH02','HK02','NH01','LD03',9),
+	('HS03','MH02','HK02','NH01','LD04',9),
+
+	('HS03','MH03','HK02','NH01','LD01',9),
+	('HS03','MH03','HK02','NH01','LD02',8),
+	('HS03','MH03','HK02','NH01','LD03',8),
+	('HS03','MH03','HK02','NH01','LD04',8),
+
+	('HS03','MH04','HK02','NH01','LD01',8),
+	('HS03','MH04','HK02','NH01','LD02',8),
+	('HS03','MH04','HK02','NH01','LD03',9),
+	('HS03','MH04','HK02','NH01','LD04',9),
+
+	('HS03','MH05','HK02','NH01','LD01',10),
+	('HS03','MH05','HK02','NH01','LD02',8),
+	('HS03','MH05','HK02','NH01','LD03',9),
+	('HS03','MH05','HK02','NH01','LD04',8),
+
+	('HS03','MH06','HK02','NH01','LD01',8),
+	('HS03','MH06','HK02','NH01','LD02',9),
+	('HS03','MH06','HK02','NH01','LD03',8),
+	('HS03','MH06','HK02','NH01','LD04',9),
+
+	('HS03','MH07','HK02','NH01','LD01',9),
+	('HS03','MH07','HK02','NH01','LD02',9.5),
+	('HS03','MH07','HK02','NH01','LD03',8),
+	('HS03','MH07','HK02','NH01','LD04',9),
+
+	('HS03','MH08','HK02','NH01','LD01',8),
+	('HS03','MH08','HK02','NH01','LD02',7.5),
+	('HS03','MH08','HK02','NH01','LD03',8),
+	('HS03','MH08','HK02','NH01','LD04',10),
+
+	('HS03','MH09','HK02','NH01','LD01',8),
+	('HS03','MH09','HK02','NH01','LD02',7.5),
+	('HS03','MH09','HK02','NH01','LD03',8),
+	('HS03','MH09','HK02','NH01','LD04',9),
+
+	('HS03','MH10','HK02','NH01','LD01',9),
+	('HS03','MH10','HK02','NH01','LD02',7.5),
+	('HS03','MH10','HK02','NH01','LD03',9),
+	('HS03','MH10','HK02','NH01','LD04',9),
+
+	('HS03','MH11','HK02','NH01','LD01',7),
+	('HS03','MH11','HK02','NH01','LD02',7.5),
+	('HS03','MH11','HK02','NH01','LD03',7),
+	('HS03','MH11','HK02','NH01','LD04',10),
+
+	('HS03','MH12','HK02','NH01','LD01',9),
+	('HS03','MH12','HK02','NH01','LD02',8),
+	('HS03','MH12','HK02','NH01','LD03',10),
+	('HS03','MH12','HK02','NH01','LD04',9)
+
+--HS 4
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS04','MH01','HK01','NH01','LD01',9),
+	('HS04','MH01','HK01','NH01','LD02',8),
+	('HS04','MH01','HK01','NH01','LD03',9),
+	('HS04','MH01','HK01','NH01','LD04',10),
+
+	('HS04','MH02','HK01','NH01','LD01',7),
+	('HS04','MH02','HK01','NH01','LD02',6),
+	('HS04','MH02','HK01','NH01','LD03',9),
+	('HS04','MH02','HK01','NH01','LD04',8.5),
+
+	('HS04','MH03','HK01','NH01','LD01',8),
+	('HS04','MH03','HK01','NH01','LD02',7.5),
+	('HS04','MH03','HK01','NH01','LD03',9),
+	('HS04','MH03','HK01','NH01','LD04',9),
+
+	('HS04','MH04','HK01','NH01','LD01',7),
+	('HS04','MH04','HK01','NH01','LD02',8.5),
+	('HS04','MH04','HK01','NH01','LD03',9),
+	('HS04','MH04','HK01','NH01','LD04',9.5),
+
+	('HS04','MH05','HK01','NH01','LD01',6),
+	('HS04','MH05','HK01','NH01','LD02',7.5),
+	('HS04','MH05','HK01','NH01','LD03',9),
+	('HS04','MH05','HK01','NH01','LD04',8),
+
+	('HS04','MH06','HK01','NH01','LD01',8),
+	('HS04','MH06','HK01','NH01','LD02',6),
+	('HS04','MH06','HK01','NH01','LD03',7),
+	('HS04','MH06','HK01','NH01','LD04',8.5),
+
+	('HS04','MH07','HK01','NH01','LD01',7.5),
+	('HS04','MH07','HK01','NH01','LD02',6.5),
+	('HS04','MH07','HK01','NH01','LD03',5.5),
+	('HS04','MH07','HK01','NH01','LD04',8),
+
+	('HS04','MH08','HK01','NH01','LD01',8),
+	('HS04','MH08','HK01','NH01','LD02',5),
+	('HS04','MH08','HK01','NH01','LD03',5),
+	('HS04','MH08','HK01','NH01','LD04',6),
+
+	('HS04','MH09','HK01','NH01','LD01',4),
+	('HS04','MH09','HK01','NH01','LD02',7.5),
+	('HS04','MH09','HK01','NH01','LD03',5),
+	('HS04','MH09','HK01','NH01','LD04',5),
+
+	('HS04','MH10','HK01','NH01','LD01',7),
+	('HS04','MH10','HK01','NH01','LD02',5),
+	('HS04','MH10','HK01','NH01','LD03',5),
+	('HS04','MH10','HK01','NH01','LD04',4),
+
+	('HS04','MH11','HK01','NH01','LD01',7.5),
+	('HS04','MH11','HK01','NH01','LD02',7.5),
+	('HS04','MH11','HK01','NH01','LD03',7),
+	('HS04','MH11','HK01','NH01','LD04',6),
+
+	('HS04','MH12','HK01','NH01','LD01',8),
+	('HS04','MH12','HK01','NH01','LD02',7.5),
+	('HS04','MH12','HK01','NH01','LD03',5),
+	('HS04','MH12','HK01','NH01','LD04',5),
+--HK2 HS 4
+	('HS04','MH01','HK02','NH01','LD01',8),
+	('HS04','MH01','HK02','NH01','LD02',7),
+	('HS04','MH01','HK02','NH01','LD03',7),
+	('HS04','MH01','HK02','NH01','LD04',10),
+
+	('HS04','MH02','HK02','NH01','LD01',10),
+	('HS04','MH02','HK02','NH01','LD02',9),
+	('HS04','MH02','HK02','NH01','LD03',9),
+	('HS04','MH02','HK02','NH01','LD04',10),
+
+	('HS04','MH03','HK02','NH01','LD01',10),
+	('HS04','MH03','HK02','NH01','LD02',7.5),
+	('HS04','MH03','HK02','NH01','LD03',5),
+	('HS04','MH03','HK02','NH01','LD04',8),
+
+	('HS04','MH04','HK02','NH01','LD01',9),
+	('HS04','MH04','HK02','NH01','LD02',8.5),
+	('HS04','MH04','HK02','NH01','LD03',9),
+	('HS04','MH04','HK02','NH01','LD04',5),
+
+	('HS04','MH05','HK02','NH01','LD01',6.5),
+	('HS04','MH05','HK02','NH01','LD02',8),
+	('HS04','MH05','HK02','NH01','LD03',9),
+	('HS04','MH05','HK02','NH01','LD04',8),
+
+	('HS04','MH06','HK02','NH01','LD01',10),
+	('HS04','MH06','HK02','NH01','LD02',9),
+	('HS04','MH06','HK02','NH01','LD03',8),
+	('HS04','MH06','HK02','NH01','LD04',5),
+
+	('HS04','MH07','HK02','NH01','LD01',10),
+	('HS04','MH07','HK02','NH01','LD02',6.5),
+	('HS04','MH07','HK02','NH01','LD03',8),
+	('HS04','MH07','HK02','NH01','LD04',3),
+
+	('HS04','MH08','HK02','NH01','LD01',7),
+	('HS04','MH08','HK02','NH01','LD02',7.5),
+	('HS04','MH08','HK02','NH01','LD03',5),
+	('HS04','MH08','HK02','NH01','LD04',5),
+
+	('HS04','MH09','HK02','NH01','LD01',8),
+	('HS04','MH09','HK02','NH01','LD02',7.5),
+	('HS04','MH09','HK02','NH01','LD03',5),
+	('HS04','MH09','HK02','NH01','LD04',9),
+
+	('HS04','MH10','HK02','NH01','LD01',7),
+	('HS04','MH10','HK02','NH01','LD02',7.5),
+	('HS04','MH10','HK02','NH01','LD03',5),
+	('HS04','MH10','HK02','NH01','LD04',10),
+
+	('HS04','MH11','HK02','NH01','LD01',7),
+	('HS04','MH11','HK02','NH01','LD02',7.5),
+	('HS04','MH11','HK02','NH01','LD03',7),
+	('HS04','MH11','HK02','NH01','LD04',10),
+
+	('HS04','MH12','HK02','NH01','LD01',7),
+	('HS04','MH12','HK02','NH01','LD02',7.5),
+	('HS04','MH12','HK02','NH01','LD03',5),
+	('HS04','MH12','HK02','NH01','LD04',9)
+--HS 5
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS05','MH01','HK01','NH01','LD01',10),
+	('HS05','MH01','HK01','NH01','LD02',8),
+	('HS05','MH01','HK01','NH01','LD03',9),
+	('HS05','MH01','HK01','NH01','LD04',10),
+
+	('HS05','MH02','HK01','NH01','LD01',7),
+	('HS05','MH02','HK01','NH01','LD02',8),
+	('HS05','MH02','HK01','NH01','LD03',6),
+	('HS05','MH02','HK01','NH01','LD04',8.5),
+
+	('HS05','MH03','HK01','NH01','LD01',6),
+	('HS05','MH03','HK01','NH01','LD02',7),
+	('HS05','MH03','HK01','NH01','LD03',8),
+	('HS05','MH03','HK01','NH01','LD04',9),
+
+	('HS05','MH04','HK01','NH01','LD01',8),
+	('HS05','MH04','HK01','NH01','LD02',8),
+	('HS05','MH04','HK01','NH01','LD03',9),
+	('HS05','MH04','HK01','NH01','LD04',9.5),
+
+	('HS05','MH05','HK01','NH01','LD01',6),
+	('HS05','MH05','HK01','NH01','LD02',7.5),
+	('HS05','MH05','HK01','NH01','LD03',9),
+	('HS05','MH05','HK01','NH01','LD04',6),
+
+	('HS05','MH06','HK01','NH01','LD01',8),
+	('HS05','MH06','HK01','NH01','LD02',6),
+	('HS05','MH06','HK01','NH01','LD03',7),
+	('HS05','MH06','HK01','NH01','LD04',8.5),
+
+	('HS05','MH07','HK01','NH01','LD01',7.5),
+	('HS05','MH07','HK01','NH01','LD02',7.5),
+	('HS05','MH07','HK01','NH01','LD03',6.5),
+	('HS05','MH07','HK01','NH01','LD04',9),
+
+	('HS05','MH08','HK01','NH01','LD01',8.5),
+	('HS05','MH08','HK01','NH01','LD02',5),
+	('HS05','MH08','HK01','NH01','LD03',7),
+	('HS05','MH08','HK01','NH01','LD04',5),
+
+	('HS05','MH09','HK01','NH01','LD01',6),
+	('HS05','MH09','HK01','NH01','LD02',8.5),
+	('HS05','MH09','HK01','NH01','LD03',7),
+	('HS05','MH09','HK01','NH01','LD04',5),
+
+	('HS05','MH10','HK01','NH01','LD01',6),
+	('HS05','MH10','HK01','NH01','LD02',5),
+	('HS05','MH10','HK01','NH01','LD03',5),
+	('HS05','MH10','HK01','NH01','LD04',4),
+
+	('HS05','MH11','HK01','NH01','LD01',7.5),
+	('HS05','MH11','HK01','NH01','LD02',7.5),
+	('HS05','MH11','HK01','NH01','LD03',7),
+	('HS05','MH11','HK01','NH01','LD04',6),
+
+	('HS05','MH12','HK01','NH01','LD01',8),
+	('HS05','MH12','HK01','NH01','LD02',7.5),
+	('HS05','MH12','HK01','NH01','LD03',5),
+	('HS05','MH12','HK01','NH01','LD04',5),
+--HK2 HS 5
+	('HS05','MH01','HK02','NH01','LD01',8.5),
+	('HS05','MH01','HK02','NH01','LD02',7),
+	('HS05','MH01','HK02','NH01','LD03',4),
+	('HS05','MH01','HK02','NH01','LD04',10),
+
+	('HS05','MH02','HK02','NH01','LD01',4),
+	('HS05','MH02','HK02','NH01','LD02',4),
+	('HS05','MH02','HK02','NH01','LD03',6),
+	('HS05','MH02','HK02','NH01','LD04',10),
+
+	('HS05','MH03','HK02','NH01','LD01',7),
+	('HS05','MH03','HK02','NH01','LD02',8),
+	('HS05','MH03','HK02','NH01','LD03',9),
+	('HS05','MH03','HK02','NH01','LD04',6),
+
+	('HS05','MH04','HK02','NH01','LD01',9),
+	('HS05','MH04','HK02','NH01','LD02',8.5),
+	('HS05','MH04','HK02','NH01','LD03',9),
+	('HS05','MH04','HK02','NH01','LD04',5),
+
+	('HS05','MH05','HK02','NH01','LD01',6.5),
+	('HS05','MH05','HK02','NH01','LD02',8),
+	('HS05','MH05','HK02','NH01','LD03',9),
+	('HS05','MH05','HK02','NH01','LD04',8),
+
+	('HS05','MH06','HK02','NH01','LD01',10),
+	('HS05','MH06','HK02','NH01','LD02',9),
+	('HS05','MH06','HK02','NH01','LD03',8),
+	('HS05','MH06','HK02','NH01','LD04',5),
+
+	('HS05','MH07','HK02','NH01','LD01',10),
+	('HS05','MH07','HK02','NH01','LD02',5),
+	('HS05','MH07','HK02','NH01','LD03',8.5),
+	('HS05','MH07','HK02','NH01','LD04',7),
+	
+	('HS05','MH08','HK02','NH01','LD01',8),
+	('HS05','MH08','HK02','NH01','LD02',7.5),
+	('HS05','MH08','HK02','NH01','LD03',6),
+	('HS05','MH08','HK02','NH01','LD04',5),
+
+	('HS05','MH09','HK02','NH01','LD01',3),
+	('HS05','MH09','HK02','NH01','LD02',3.5),
+	('HS05','MH09','HK02','NH01','LD03',5),
+	('HS05','MH09','HK02','NH01','LD04',9),
+
+	('HS05','MH10','HK02','NH01','LD01',5),
+	('HS05','MH10','HK02','NH01','LD02',7.5),
+	('HS05','MH10','HK02','NH01','LD03',4),
+	('HS05','MH10','HK02','NH01','LD04',6),
+
+	('HS05','MH11','HK02','NH01','LD01',7),
+	('HS05','MH11','HK02','NH01','LD02',7.5),
+	('HS05','MH11','HK02','NH01','LD03',7),
+	('HS05','MH11','HK02','NH01','LD04',10),
+
+	('HS05','MH12','HK02','NH01','LD01',7.5),
+	('HS05','MH12','HK02','NH01','LD02',7.5),
+	('HS05','MH12','HK02','NH01','LD03',5.5),
+	('HS05','MH12','HK02','NH01','LD04',9)
+
+--HS 6
+INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
+VALUES
+	('HS06','MH01','HK01','NH01','LD01',8),
+	('HS06','MH01','HK01','NH01','LD02',7),
+	('HS06','MH01','HK01','NH01','LD03',6),
+	('HS06','MH01','HK01','NH01','LD04',10),
+
+	('HS06','MH02','HK01','NH01','LD01',9),
+	('HS06','MH02','HK01','NH01','LD02',8),
+	('HS06','MH02','HK01','NH01','LD03',7),
+	('HS06','MH02','HK01','NH01','LD04',6),
+
+	('HS06','MH03','HK01','NH01','LD01',4),
+	('HS06','MH03','HK01','NH01','LD02',8),
+	('HS06','MH03','HK01','NH01','LD03',6),
+	('HS06','MH03','HK01','NH01','LD04',5),
+
+	('HS06','MH04','HK01','NH01','LD01',9),
+	('HS06','MH04','HK01','NH01','LD02',7),
+	('HS06','MH04','HK01','NH01','LD03',6),
+	('HS06','MH04','HK01','NH01','LD04',5),
+
+	('HS06','MH05','HK01','NH01','LD01',8),
+	('HS06','MH05','HK01','NH01','LD02',7),
+	('HS06','MH05','HK01','NH01','LD03',6),
+	('HS06','MH05','HK01','NH01','LD04',6),
+
+	('HS06','MH06','HK01','NH01','LD01',7),
+	('HS06','MH06','HK01','NH01','LD02',6),
+	('HS06','MH06','HK01','NH01','LD03',7),
+	('HS06','MH06','HK01','NH01','LD04',8.5),
+
+	('HS06','MH07','HK01','NH01','LD01',5.5),
+	('HS06','MH07','HK01','NH01','LD02',7.5),
+	('HS06','MH07','HK01','NH01','LD03',6.5),
+	('HS06','MH07','HK01','NH01','LD04',9),
+
+	('HS06','MH08','HK01','NH01','LD01',8.5),
+	('HS06','MH08','HK01','NH01','LD02',4),
+	('HS06','MH08','HK01','NH01','LD03',7),
+	('HS06','MH08','HK01','NH01','LD04',5),
+
+	('HS06','MH09','HK01','NH01','LD01',6),
+	('HS06','MH09','HK01','NH01','LD02',8.5),
+	('HS06','MH09','HK01','NH01','LD03',7),
+	('HS06','MH09','HK01','NH01','LD04',5),
+
+	('HS06','MH10','HK01','NH01','LD01',6),
+	('HS06','MH10','HK01','NH01','LD02',5),
+	('HS06','MH10','HK01','NH01','LD03',5),
+	('HS06','MH10','HK01','NH01','LD04',4),
+
+	('HS06','MH11','HK01','NH01','LD01',7.5),
+	('HS06','MH11','HK01','NH01','LD02',7.5),
+	('HS06','MH11','HK01','NH01','LD03',7),
+	('HS06','MH11','HK01','NH01','LD04',6),
+
+	('HS06','MH12','HK01','NH01','LD01',8),
+	('HS06','MH12','HK01','NH01','LD02',7.5),
+	('HS06','MH12','HK01','NH01','LD03',5),
+	('HS06','MH12','HK01','NH01','LD04',5),
+--HK2 HS 6
+	('HS06','MH01','HK02','NH01','LD01',7.5),
+	('HS06','MH01','HK02','NH01','LD02',8),
+	('HS06','MH01','HK02','NH01','LD03',9),
+	('HS06','MH01','HK02','NH01','LD04',10),
+
+	('HS06','MH02','HK02','NH01','LD01',5),
+	('HS06','MH02','HK02','NH01','LD02',6),
+	('HS06','MH02','HK02','NH01','LD03',7),
+	('HS06','MH02','HK02','NH01','LD04',8),
+
+	('HS06','MH03','HK02','NH01','LD01',7),
+	('HS06','MH03','HK02','NH01','LD02',7),
+	('HS06','MH03','HK02','NH01','LD03',7),
+	('HS06','MH03','HK02','NH01','LD04',7),
+
+	('HS06','MH04','HK02','NH01','LD01',8),
+	('HS06','MH04','HK02','NH01','LD02',8.5),
+	('HS06','MH04','HK02','NH01','LD03',8),
+	('HS06','MH04','HK02','NH01','LD04',8),
+
+	('HS06','MH05','HK02','NH01','LD01',8.5),
+	('HS06','MH05','HK02','NH01','LD02',7),
+	('HS06','MH05','HK02','NH01','LD03',6),
+	('HS06','MH05','HK02','NH01','LD04',6),
+
+	('HS06','MH06','HK02','NH01','LD01',10),
+	('HS06','MH06','HK02','NH01','LD02',9),
+	('HS06','MH06','HK02','NH01','LD03',8),
+	('HS06','MH06','HK02','NH01','LD04',5),
+
+	('HS06','MH07','HK02','NH01','LD01',8),
+	('HS06','MH07','HK02','NH01','LD02',7),
+	('HS06','MH07','HK02','NH01','LD03',6.5),
+	('HS06','MH07','HK02','NH01','LD04',6),
+
+	('HS06','MH08','HK02','NH01','LD01',8),
+	('HS06','MH08','HK02','NH01','LD02',7.5),
+	('HS06','MH08','HK02','NH01','LD03',9),
+	('HS06','MH08','HK02','NH01','LD04',8),
+
+	('HS06','MH09','HK02','NH01','LD01',7),
+	('HS06','MH09','HK02','NH01','LD02',6.5),
+	('HS06','MH09','HK02','NH01','LD03',6),
+	('HS06','MH09','HK02','NH01','LD04',5),
+
+	('HS06','MH10','HK02','NH01','LD01',9),
+	('HS06','MH10','HK02','NH01','LD02',9.5),
+	('HS06','MH10','HK02','NH01','LD03',8),
+	('HS06','MH10','HK02','NH01','LD04',7),
+
+	('HS06','MH11','HK02','NH01','LD01',9),
+	('HS06','MH11','HK02','NH01','LD02',8),
+	('HS06','MH11','HK02','NH01','LD03',7),
+	('HS06','MH11','HK02','NH01','LD04',6),
+
+	('HS06','MH12','HK02','NH01','LD01',7.5),
+	('HS06','MH12','HK02','NH01','LD02',7.5),
+	('HS06','MH12','HK02','NH01','LD03',5.5),
+	('HS06','MH12','HK02','NH01','LD04',9)
+
+
+--delete DIEMMONHOC
+--delete HANHKIEM 
 insert into HANHKIEM(MaHanhKiem, TenHanhKiem, MaNH, MaHK, MaHS)
  VALUES 
 	('T',N'Tốt','NH01', 'HK01', 'HS01'),
-	('K',N'Khá','NH01', 'HK02', 'HS01'),
+	('T',N'Tốt','NH01', 'HK02', 'HS01'),
 	('TB',N'Trung Bình','NH01', 'HK01', 'HS02'),
 	('Y',N'Yếu','NH01', 'HK02', 'HS02'),
 	('T',N'Tốt','NH01', 'HK01', 'HS03'),
-	('K',N'Khá','NH01', 'HK02', 'HS03'),
+	('K',N'Tốt','NH01', 'HK02', 'HS03'),
 	('T',N'Tốt','NH01', 'HK01', 'HS04'),
-	('T',N'Tốt','NH01', 'HK02', 'HS04'),
+	('T',N'Khá','NH01', 'HK02', 'HS04'),
 	('T',N'Tốt','NH01', 'HK01', 'HS05'),
 	('T',N'Tốt','NH01', 'HK02', 'HS05'),
 	('T',N'Tốt','NH01', 'HK01', 'HS06'),
-	('T',N'Tốt','NH01', 'HK02', 'HS06'),
+	('T',N'Khá','NH01', 'HK02', 'HS06')
 
-	('T',N'Tốt','NH02', 'HK01', 'HS01'),
-	('T',N'Tốt','NH02', 'HK02', 'HS01'),
-	('TB',N'Trung Bình','NH02', 'HK01', 'HS02'),
-	('Y',N'Yếu','NH02', 'HK02', 'HS02'),
-	('T',N'Tốt','NH02', 'HK01', 'HS03'),
-	('K',N'Khá','NH02', 'HK02', 'HS03'),
-	('T',N'Tốt','NH02', 'HK01', 'HS04'),
-	('K',N'Khá','NH02', 'HK02', 'HS04'),
-	('T',N'Tốt','NH02', 'HK01', 'HS05'),
-	('T',N'Tốt','NH02', 'HK02', 'HS05'),
-	('K',N'Khá','NH02', 'HK01', 'HS06'),
-	('T',N'Tốt','NH02', 'HK02', 'HS06')
+CREATE VIEW Diem_Hoc_Sinh AS 
+	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) as DTB,hk.TenHK AS Hoc_Ky, nh.TenNH AS Nam_Hoc FROM dbo.DIEMMONHOC dmh
+	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
+	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
+	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
+	JOIN HOCKY hk ON hk.MaHK = dmh.MaHK
+	JOIN LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
+	GROUP BY hs.MaHS, hk.TenHK,hs.TenHS,mh.TenMH, nh.TenNH
 
-select * from HANHKIEM
-----Diem_Trung_Binh_Mon_HK1 của từng môn/học sinh-
+DROP VIEW Diem_Hoc_Sinh
+
+SELECT * FROM Diem_Hoc_Sinh	
+
+----Diem_Trung_Binh_Mon_HK1-
 CREATE VIEW Diem_Hoc_Sinh_HK1 AS 
-SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK1 FROM DIEMMONHOC dmh
+SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK1, nh.TenNH AS Nam_Hoc FROM DIEMMONHOC dmh
+	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
 	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
 	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
 	JOIN HOCKY hk ON hk.MaHK = dmh.MaHK
 	JOIN LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
 	WHERE hk.MaHK='HK01'
-GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH
+GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH, nh.TenNH
 
 SELECT * FROM Diem_Hoc_Sinh_HK1
 DROP VIEW Diem_Hoc_Sinh_HK1
 GO
 --Diem_Trung_Binh_HK1 cua tung hoc sinh------------------------
 CREATE VIEW Diem_TBHK1 AS
-SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , ROUND(SUM(DTBM_HK1)/12,2) AS Diem_Trung_Binh_Hoc_Ky1 FROM Diem_Hoc_Sinh_HK1
-GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh
+SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh ,Nam_Hoc, ROUND(SUM(DTBM_HK1)/12,2) AS Diem_Trung_Binh_Hoc_Ky1 FROM Diem_Hoc_Sinh_HK1
+GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh, Nam_Hoc
 GO
-
-SELECT * FROM dbo.Diem_TBHK1
-------------------------Diem_Trung_Binh_Mon_HK2 CỦA TỪNG MÔN/HS------------------------
+DROP VIEW Diem_TBHK1
+SELECT * FROM Diem_TBHK1
+------------------------Diem_Trung_Binh_Mon_HK2 ------------------------
 CREATE VIEW Diem_Hoc_Sinh_HK2 AS 
-SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK2 FROM  DIEMMONHOC dmh
-	JOIN dbo.HOCSINH hs ON hs.MaHS = dmh.MaHS
-	JOIN dbo.MONHOC mh ON mh.MaMH = dmh.MaMH
-	JOIN dbo.HOCKY hk ON hk.MaHK = dmh.MaHK
-	JOIN dbo.LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
+SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc, nh.TenNH AS Nam_Hoc, ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK2 FROM  DIEMMONHOC dmh
+	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
+	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
+	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
+	JOIN HOCKY hk ON hk.MaHK = dmh.MaHK
+	JOIN LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
 	WHERE hk.MaHK='HK02'
-GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH
+GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH, nh.TenNH
 GO
 
 SELECT * FROM Diem_Hoc_Sinh_HK2
 
 DROP VIEW Diem_Hoc_Sinh_HK2
 
-------------------------Diem_Trung_Binh_HK2 CỦA TỪNG HS------------------------
+------------------------Diem_Trung_Binh_HK2 ------------------------
 CREATE VIEW Diem_TBHK2 AS
-SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , ROUND(SUM(DTBM_HK2)/12,2) AS Diem_Trung_Binh_Hoc_Ky2 FROM Diem_Hoc_Sinh_HK2
-GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh
+SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , Nam_Hoc, ROUND(SUM(DTBM_HK2)/12,2) AS Diem_Trung_Binh_Hoc_Ky2 FROM Diem_Hoc_Sinh_HK2
+GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh, Nam_Hoc
 GO
 
-SELECT * FROM Diem_TBHK2
+SELECT * FROM Diem_TBHK2 
 
 DROP VIEW Diem_TBHK2
 
 ------------------------Diem_Trung_Binh_Ca_Nam------------------------
 CREATE VIEW DTB AS
-SELECT tb1.Ma_Hoc_Sinh, tb1.Ten_Hoc_Sinh, ROUND((Diem_Trung_Binh_Hoc_Ky2*2+Diem_Trung_Binh_Hoc_Ky1)/3,2) AS Diem_Trung_Binh_Ca_Nam FROM Diem_TBHK2 tb2 
+SELECT tb1.Ma_Hoc_Sinh, tb1.Ten_Hoc_Sinh, tb1.Nam_Hoc, ROUND((Diem_Trung_Binh_Hoc_Ky2*2+Diem_Trung_Binh_Hoc_Ky1)/3,2) AS Diem_Trung_Binh_Ca_Nam 
+FROM Diem_TBHK2 tb2 
 JOIN Diem_TBHK1 tb1 ON tb1.Ma_Hoc_Sinh=tb2.Ma_Hoc_Sinh
-GO
+
 
 SELECT * FROM DTB
 
-DROP VIEW DTB
+---Xet hanh kiem
+CREATE VIEW Hanh_kiem_Hoc_Sinh AS 
+	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh, nh.TenNH AS Nam_Hoc, hk.TenHanhKiem as Hanh_Kiem FROM dbo.HANHKIEM hk
+	JOIN dbo.NAMHOC nh ON nh.MaNH = hk.MaNH
+	JOIN dbo.HOCSINH hs ON hs.MaHS = hk.MaHS
+	where hk.MaHK='HK02'
+
+DROP VIEW Diem_Hoc_Sinh
+
+SELECT * FROM Hanh_kiem_Hoc_Sinh
+
+
+
+
+
+
