@@ -1,0 +1,32 @@
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe.config
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.pdb
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.AssemblyReference.cache
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Form1.resources
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Properties.Resources.resources
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.GenerateResource.cache
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
+C:\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe.config
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.pdb
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.AssemblyReference.cache
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Form1.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Properties.Resources.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.GenerateResource.cache
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe.config
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.pdb
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.AssemblyReference.cache
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmDangNhap.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmMain.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Properties.Resources.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.GenerateResource.cache
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT-main\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmThongTinHocSinh.resources
