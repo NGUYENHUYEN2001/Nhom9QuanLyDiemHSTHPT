@@ -1,7 +1,7 @@
 ﻿
 namespace Nhom9_QLDHSTHPT
 {
-    partial class FrmMain
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Nhom9_QLDHSTHPT
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +71,6 @@ namespace Nhom9_QLDHSTHPT
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.qUẢNLÝĐIỂMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -84,6 +83,7 @@ namespace Nhom9_QLDHSTHPT
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.qUẢNLÝĐIỂMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTTHS = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
@@ -103,7 +103,7 @@ namespace Nhom9_QLDHSTHPT
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(730, 24);
+            this.menuStrip.Size = new System.Drawing.Size(632, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -431,14 +431,6 @@ namespace Nhom9_QLDHSTHPT
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.aboutToolStripMenuItem.Text = "&About ... ...";
             // 
-            // qUẢNLÝĐIỂMToolStripMenuItem
-            // 
-            this.qUẢNLÝĐIỂMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuTTHS});
-            this.qUẢNLÝĐIỂMToolStripMenuItem.Name = "qUẢNLÝĐIỂMToolStripMenuItem";
-            this.qUẢNLÝĐIỂMToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
-            this.qUẢNLÝĐIỂMToolStripMenuItem.Text = "QUẢN LÝ ĐIỂM";
-            // 
             // toolStrip
             // 
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -452,7 +444,7 @@ namespace Nhom9_QLDHSTHPT
             this.helpToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(730, 25);
+            this.toolStrip.Size = new System.Drawing.Size(632, 25);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
@@ -528,7 +520,7 @@ namespace Nhom9_QLDHSTHPT
             this.toolStripStatusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 431);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(730, 22);
+            this.statusStrip.Size = new System.Drawing.Size(632, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -538,6 +530,14 @@ namespace Nhom9_QLDHSTHPT
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // qUẢNLÝĐIỂMToolStripMenuItem
+            // 
+            this.qUẢNLÝĐIỂMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuTTHS});
+            this.qUẢNLÝĐIỂMToolStripMenuItem.Name = "qUẢNLÝĐIỂMToolStripMenuItem";
+            this.qUẢNLÝĐIỂMToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.qUẢNLÝĐIỂMToolStripMenuItem.Text = "QUẢN LÝ ĐIỂM";
+            // 
             // mnuTTHS
             // 
             this.mnuTTHS.Name = "mnuTTHS";
@@ -545,18 +545,19 @@ namespace Nhom9_QLDHSTHPT
             this.mnuTTHS.Text = "Thông tin học sinh";
             this.mnuTTHS.Click += new System.EventHandler(this.mnuTTHS_Click);
             // 
-            // FrmMain
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 453);
+            this.ClientSize = new System.Drawing.Size(632, 453);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
-            this.Name = "FrmMain";
-            this.Text = "Trường THPT Trần Hưng Đạo";
+            this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản lý điểm ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

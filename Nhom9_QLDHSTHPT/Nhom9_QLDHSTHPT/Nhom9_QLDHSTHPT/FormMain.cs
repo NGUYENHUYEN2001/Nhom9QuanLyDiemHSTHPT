@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Nhom9_QLDHSTHPT
 {
-    public partial class FrmMain : Form
+    public partial class FormMain : Form
     {
         private int childFormNumber = 0;
 
-        public FrmMain()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -106,7 +106,7 @@ namespace Nhom9_QLDHSTHPT
 
         private void mnuTTHS_Click(object sender, EventArgs e)
         {
-            Form frmtths = new FrmThongTinHocSinh();
+            Form frmtths = new FormThongTinHocSinh();
             frmtths.Show();
         }
     }

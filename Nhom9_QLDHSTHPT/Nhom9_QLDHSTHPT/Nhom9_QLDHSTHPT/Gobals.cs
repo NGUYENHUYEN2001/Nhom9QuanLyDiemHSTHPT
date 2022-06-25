@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nhom9_QLDHSTHPT
 {
-    class Globals
+    class Gobals
     {
         public static string USER_ID = "";
         public static int STATUS = 0;

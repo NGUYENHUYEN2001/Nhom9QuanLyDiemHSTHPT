@@ -47,7 +47,8 @@ CREATE TABLE NAMHOC(
 CREATE TABLE DANGNHAP(
 	UserID int not null identity(1,1) PRIMARY KEY,
 	Username CHAR(10),
-	MatKhau VARCHAR(50)
+	MatKhau VARCHAR(50),
+	Status Bit NOT NULL
 )
 
 CREATE TABLE LOAIDIEM(
@@ -142,16 +143,16 @@ VALUES
 	('HK02',N'Học kỳ 2')	
 SELECT* FROM HOCKY
 --INSERT INTO DANGNHAP
-INSERT INTO DANGNHAP(Username, MatKhau)
+INSERT INTO DANGNHAP(Username, MatKhau, status)
 VALUES
-	('HS01','HS01123'),
-	('HS02','HS02123'),
-	('HS03','HS03123'),
-	('HS04','HS04123'),
-	('HS05','HS05123'),
-	('HS06','HS06123'),
-	('GV01','GV01123'),
-	('GV02','GV02123')
+	('HS01','HS01123',0),
+	('HS02','HS02123',0),
+	('HS03','HS03123',0),
+	('HS04','HS04123',0),
+	('HS05','HS05123',0),
+	('HS06','HS06123',0),
+	('GV01','GV01123',1),
+	('GV02','GV02123',1)
 SELECT * FROM DANGNHAP
 --INSERT NAMHOC
 INSERT INTO NAMHOC(MaNH, TenNH)
@@ -929,7 +930,7 @@ insert into HANHKIEM(MaHanhKiem, TenHanhKiem, MaNH, MaHK, MaHS)
 	('T',N'Khá','NH01', 'HK02', 'HS06')
 
 CREATE VIEW Diem_Hoc_Sinh AS 
-	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) as DTB,hk.TenHK AS Hoc_Ky, nh.TenNH AS Nam_Hoc FROM dbo.DIEMMONHOC dmh
+	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,1) as DTB,hk.TenHK AS Hoc_Ky, nh.TenNH AS Nam_Hoc FROM dbo.DIEMMONHOC dmh
 	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
 	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
 	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
@@ -943,7 +944,7 @@ SELECT * FROM Diem_Hoc_Sinh
 
 ----Diem_Trung_Binh_Mon_HK1-
 CREATE VIEW Diem_Hoc_Sinh_HK1 AS 
-SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK1, nh.TenNH AS Nam_Hoc FROM DIEMMONHOC dmh
+SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,ROUND(SUM(dmh.Diem*ld.HeSo)/7,1) AS DTBM_HK1, nh.TenNH AS Nam_Hoc FROM DIEMMONHOC dmh
 	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
 	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
 	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
@@ -957,14 +958,14 @@ DROP VIEW Diem_Hoc_Sinh_HK1
 GO
 --Diem_Trung_Binh_HK1 cua tung hoc sinh------------------------
 CREATE VIEW Diem_TBHK1 AS
-SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh ,Nam_Hoc, ROUND(SUM(DTBM_HK1)/12,2) AS Diem_Trung_Binh_Hoc_Ky1 FROM Diem_Hoc_Sinh_HK1
+SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh ,Nam_Hoc, ROUND(SUM(DTBM_HK1)/12,1) AS Diem_Trung_Binh_Hoc_Ky1 FROM Diem_Hoc_Sinh_HK1
 GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh, Nam_Hoc
 GO
 DROP VIEW Diem_TBHK1
 SELECT * FROM Diem_TBHK1
 ------------------------Diem_Trung_Binh_Mon_HK2 ------------------------
 CREATE VIEW Diem_Hoc_Sinh_HK2 AS 
-SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc, nh.TenNH AS Nam_Hoc, ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) AS DTBM_HK2 FROM  DIEMMONHOC dmh
+SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc, nh.TenNH AS Nam_Hoc, ROUND(SUM(dmh.Diem*ld.HeSo)/7,1) AS DTBM_HK2 FROM  DIEMMONHOC dmh
 	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
 	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
 	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
@@ -980,7 +981,7 @@ DROP VIEW Diem_Hoc_Sinh_HK2
 
 ------------------------Diem_Trung_Binh_HK2 ------------------------
 CREATE VIEW Diem_TBHK2 AS
-SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , Nam_Hoc, ROUND(SUM(DTBM_HK2)/12,2) AS Diem_Trung_Binh_Hoc_Ky2 FROM Diem_Hoc_Sinh_HK2
+SELECT Ma_Hoc_Sinh, Ten_Hoc_Sinh , Nam_Hoc, ROUND(SUM(DTBM_HK2)/12,1) AS Diem_Trung_Binh_Hoc_Ky2 FROM Diem_Hoc_Sinh_HK2
 GROUP BY Ma_Hoc_Sinh, Ten_Hoc_Sinh, Nam_Hoc
 GO
 
@@ -990,7 +991,7 @@ DROP VIEW Diem_TBHK2
 
 ------------------------Diem_Trung_Binh_Ca_Nam------------------------
 CREATE VIEW DTB AS
-SELECT tb1.Ma_Hoc_Sinh, tb1.Ten_Hoc_Sinh, tb1.Nam_Hoc, ROUND((Diem_Trung_Binh_Hoc_Ky2*2+Diem_Trung_Binh_Hoc_Ky1)/3,2) AS Diem_Trung_Binh_Ca_Nam 
+SELECT tb1.Ma_Hoc_Sinh, tb1.Ten_Hoc_Sinh, tb1.Nam_Hoc, ROUND((Diem_Trung_Binh_Hoc_Ky2*2+Diem_Trung_Binh_Hoc_Ky1)/3,1) AS Diem_Trung_Binh_Ca_Nam 
 FROM Diem_TBHK2 tb2 
 JOIN Diem_TBHK1 tb1 ON tb1.Ma_Hoc_Sinh=tb2.Ma_Hoc_Sinh
 

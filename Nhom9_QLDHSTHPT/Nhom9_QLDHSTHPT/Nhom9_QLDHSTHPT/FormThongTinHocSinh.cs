@@ -8,25 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
+
 namespace Nhom9_QLDHSTHPT
 {
-    public partial class FrmThongTinHocSinh : Form
+    public partial class FormThongTinHocSinh : Form
     {
-        public FrmThongTinHocSinh()
+        public FormThongTinHocSinh()
         {
             InitializeComponent();
         }
-
         Ketnoi_csdl ketnoi = new Ketnoi_csdl();
-        private void butThoat_Click(object sender, EventArgs e)
-        {
-            DialogResult thongbao;
-            thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (thongbao == DialogResult.Yes)
-                this.Close();
-        }
-
         private void LAYBANG_HOCSINH()
         {
             DataTable dta = new DataTable();
@@ -43,6 +34,11 @@ namespace Nhom9_QLDHSTHPT
             cmbMaLop.ValueMember = "MaLop";
         }
 
+        private void FormThongTinHocSinh_Load(object sender, EventArgs e)
+        {
+            LAYBANG_HOCSINH();
+            LAYBANG_LOP();
+        }
         private void Hienthi_Dulieu()
         {
             txtMaHS.DataBindings.Clear();
@@ -67,6 +63,14 @@ namespace Nhom9_QLDHSTHPT
             cmbMaLop.DataBindings.Add("Text", dGV_HS.DataSource, "MaLop");
         }
 
+        private void butThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (thongbao == DialogResult.Yes)
+                this.Close();
+        }
+
         private void butXoa_Click(object sender, EventArgs e)
         {
             DialogResult thongbao;
@@ -78,21 +82,12 @@ namespace Nhom9_QLDHSTHPT
             }
         }
 
-        private void FrmThongTinHocSinh_Load(object sender, EventArgs e)
+        private void butSua_Click(object sender, EventArgs e)
         {
+            string sql2;
+            sql2 = "Update HOCSINH Set TenHS ='" + txtTenHS.Text + "', GioiTinh = '" + txtGT.Value + "', NgaySinh = '" + txtNgaySinh.Text + "', DiaChi= '" + txtDiaChi.Text + "', Sdt = '" + txtSDT.Text + "', MaLop = '" + cmbMaLop.Text + "' where  MaHS = '" + txtMaHS.Text + "'";
+            ketnoi.Execute(sql2);
             LAYBANG_HOCSINH();
-            LAYBANG_LOP();
-        }
-
-        private void butTaoMoi_Click(object sender, EventArgs e)
-        {
-            txtMaHS.Text = "";
-            txtTenHS.Text = "";
-            txtGT.Value = 0;
-            txtNgaySinh.Text = "";
-            txtDiaChi.Text = "";
-            txtSDT.Text = "";
-
         }
 
         private void butThem_Click(object sender, EventArgs e)
@@ -115,14 +110,17 @@ namespace Nhom9_QLDHSTHPT
                 ketnoi.Execute(sql1);
                 LAYBANG_HOCSINH();
             }
+
         }
 
-        private void butSua_Click(object sender, EventArgs e)
+        private void butTaoMoi_Click(object sender, EventArgs e)
         {
-            string sql2;
-            sql2 = "Update HOCSINH Set TenHS ='" + txtTenHS.Text + "', GioiTinh = '" + txtGT.Value + "', NgaySinh = '" + txtNgaySinh.Text + "', DiaChi= '" + txtDiaChi.Text + "', Sdt = '" + txtSDT.Text + "', MaLop = '" + cmbMaLop.Text + "' where  MaHS = '" + txtMaHS.Text + "'";
-            ketnoi.Execute(sql2);
-            LAYBANG_HOCSINH();
+            txtMaHS.Text = "";
+            txtTenHS.Text = "";
+            txtGT.Value = 0;
+            txtNgaySinh.Text = "";
+            txtDiaChi.Text = "";
+            txtSDT.Text = "";
         }
     }
 }

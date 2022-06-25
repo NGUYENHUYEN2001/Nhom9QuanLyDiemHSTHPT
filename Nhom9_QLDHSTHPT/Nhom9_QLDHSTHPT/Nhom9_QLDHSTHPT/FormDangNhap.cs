@@ -7,21 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
+
 namespace Nhom9_QLDHSTHPT
 {
-    public partial class FrmDangNhap : Form
+    public partial class FormDangNhap : Form
     {
-        public FrmDangNhap()
+        public FormDangNhap()
         {
             InitializeComponent();
         }
         Ketnoi_csdl ketnoi = new Ketnoi_csdl();
-        private void radGV_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void butThoat_Click(object sender, EventArgs e)
         {
@@ -47,9 +43,9 @@ namespace Nhom9_QLDHSTHPT
             if (datRed.Read() == true)
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Globals.USER_ID = username;
-                Globals.STATUS = status;
-                Form frmmain = new FrmMain();
+                Gobals.USER_ID = username;
+                Gobals.STATUS = status;
+                Form frmmain = new FormMain();
                 frmmain.Show();
                 this.Hide();
             }
