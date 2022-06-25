@@ -40,3 +40,21 @@ C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QL
 C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\stdole.dll
 C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CopyComplete
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe.config
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.exe
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\Nhom9_QLDHSTHPT.pdb
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\ShockwaveFlashObjects.dll
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\bin\Debug\stdole.dll
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.AssemblyReference.cache
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Form1.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmBaoCaoDiemHS.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmDangNhap.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmMain.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmThongKeDiemHS.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmThongTinHocSinh.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.Properties.Resources.resources
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.GenerateResource.cache
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CoreCompileInputs.cache
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CopyComplete
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
+D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
