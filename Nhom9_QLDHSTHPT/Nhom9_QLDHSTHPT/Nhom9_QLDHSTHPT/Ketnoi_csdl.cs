@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
+//DESKTOP-O631SU0\SQLEXPRESS
 namespace Nhom9_QLDHSTHPT
 {
     class Ketnoi_csdl
