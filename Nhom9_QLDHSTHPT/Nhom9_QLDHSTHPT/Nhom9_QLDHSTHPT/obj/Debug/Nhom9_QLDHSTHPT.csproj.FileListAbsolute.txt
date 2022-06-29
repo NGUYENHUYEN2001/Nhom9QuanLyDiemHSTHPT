@@ -64,3 +64,4 @@ C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QL
 C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmNhapDiem.resources
 C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmNhapHanhKiem.resources
 C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmHSXemDiem.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmChiTietDiem.resources
