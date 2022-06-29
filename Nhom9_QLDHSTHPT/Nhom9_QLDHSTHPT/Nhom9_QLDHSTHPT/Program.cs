@@ -17,7 +17,7 @@ namespace Nhom9_QLDHSTHPT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new FrmHSXemDiem());
+            Application.Run(new FrmThongKeDiemHS());
 
         }
     }
