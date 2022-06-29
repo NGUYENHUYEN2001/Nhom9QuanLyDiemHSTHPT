@@ -31,7 +31,6 @@ namespace Nhom9_QLDHSTHPT
         private void FrmChiTietDiem_Load(object sender, EventArgs e)
         {
             loadStudentView();
-            loadScoreView("");
             textBox1.DataBindings.Clear();
             textBox1.DataBindings.Add("Text", dataGridView1.DataSource, "MaHS");
         }
@@ -59,7 +58,7 @@ namespace Nhom9_QLDHSTHPT
             }
             dta = connection.Lay_Dulieu(sql);
             dataGridView2.DataSource = dta;
-
+            loadSubjectView(MaHS);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -69,7 +68,7 @@ namespace Nhom9_QLDHSTHPT
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            loadSubjectView(textBox1.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -82,9 +81,22 @@ namespace Nhom9_QLDHSTHPT
             loadScoreView(textBox1.Text);
         }
 
+        private void loadSubjectView(string MaHS)
+        {
+            DataTable dta = new DataTable();
+            string sql = null;
+         
+            sql = $"select MaMH, AVG(Diem) as Mean, MAX(Diem) as Highest, MIN(Diem) as Lowest from DIEMMONHOC where MaHS = '{MaHS}' group by MaMH";
+
+            dta = connection.Lay_Dulieu(sql);
+            dataGridView3.DataSource = dta;
+        }
+
+
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
