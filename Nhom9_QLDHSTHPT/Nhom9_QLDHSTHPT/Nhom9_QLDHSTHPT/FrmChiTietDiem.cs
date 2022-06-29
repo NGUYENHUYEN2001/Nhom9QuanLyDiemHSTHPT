@@ -31,6 +31,7 @@ namespace Nhom9_QLDHSTHPT
         private void FrmChiTietDiem_Load(object sender, EventArgs e)
         {
             loadStudentView();
+            loadScoreView("");
             textBox1.DataBindings.Clear();
             textBox1.DataBindings.Add("Text", dataGridView1.DataSource, "MaHS");
         }
@@ -46,9 +47,19 @@ namespace Nhom9_QLDHSTHPT
         private void loadScoreView(string MaHS)
         {
             DataTable dta = new DataTable();
-            string sql = $"select * from DIEMMONHOC where MaHS = {MaHS}";
+            string sql = null;
+            if (MaHS.Length != 0)
+            {
+            
+                sql = $"select * from DIEMMONHOC where MaHS = '{MaHS}'";
+            
+            } else
+            {
+                sql = $"select * from DIEMMONHOC";
+            }
             dta = connection.Lay_Dulieu(sql);
             dataGridView2.DataSource = dta;
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
