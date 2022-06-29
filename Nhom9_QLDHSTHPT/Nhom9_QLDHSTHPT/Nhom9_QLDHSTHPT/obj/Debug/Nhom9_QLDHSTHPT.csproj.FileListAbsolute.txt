@@ -58,3 +58,9 @@ D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHST
 D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.csproj.CopyComplete
 D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.exe
 D:\học kỳ hè 2021-2022\Lập trình. NET\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.pdb
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmDangNhap.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmMain.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmThongTinHocSinh.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmNhapDiem.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmNhapHanhKiem.resources
+C:\New folder (2)\Nhom9QuanLyDiemHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\Nhom9_QLDHSTHPT\obj\Debug\Nhom9_QLDHSTHPT.FrmHSXemDiem.resources

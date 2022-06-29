@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
+//DESKTOP-O631SU0\SQLEXPRESS
 namespace Nhom9_QLDHSTHPT
 {
     class Ketnoi_csdl
@@ -17,7 +17,7 @@ namespace Nhom9_QLDHSTHPT
 
         public void ketnoi_dl()
         {
-            string strketnoi = @"Data Source=DESKTOP-3L4FS0A\SQLEXPRESS;Initial Catalog=QLDHSTHPT;Integrated Security=True";
+            string strketnoi = @"Data Source=DESKTOP-O631SU0\SQLEXPRESS;Initial Catalog=QLDHSTHPT;Integrated Security=True";
             cnn = new SqlConnection(strketnoi);
             cnn.Open();
         }

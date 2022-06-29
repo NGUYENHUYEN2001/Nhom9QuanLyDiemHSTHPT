@@ -54,5 +54,10 @@ namespace Nhom9_QLDHSTHPT
                 MessageBox.Show("Hãy kiểm tra lại thông tin đăng nhập!", "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FrmDangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

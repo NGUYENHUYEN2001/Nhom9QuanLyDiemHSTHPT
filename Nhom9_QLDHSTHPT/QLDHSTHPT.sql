@@ -232,6 +232,9 @@ VALUES
 	('HS01','MH12','HK01','NH01','LD02',9),
 	('HS01','MH12','HK01','NH01','LD03',9),
 	('HS01','MH12','HK01','NH01','LD04',9)
+
+INSERT INTO DIEMMONHOC VALUES('HS01', 'MH01','HK01','NH02', 'LD01',7)
+DELETE FROM DIEMMONHOC WHERE MaHS='HS01'AND MaMH='MH01'AND MaHK= 'HK01'AND MaNH='NH02'AND MaLoaiDiem='LD01'
 SELECT * FROM DIEMMONHOC
 	--Diem Hoc ky 2 HS1
 INSERT INTO DIEMMONHOC(MaHS, MaMH,MaHK, MaNH, MaLoaiDiem, Diem)
@@ -917,18 +920,20 @@ VALUES
 --delete HANHKIEM 
 insert into HANHKIEM(MaHanhKiem, TenHanhKiem, MaNH, MaHK, MaHS)
  VALUES 
-	('T',N'Tốt','NH01', 'HK01', 'HS01'),
-	('T',N'Tốt','NH01', 'HK02', 'HS01'),
-	('TB',N'Trung Bình','NH01', 'HK01', 'HS02'),
-	('Y',N'Yếu','NH01', 'HK02', 'HS02'),
-	('T',N'Tốt','NH01', 'HK01', 'HS03'),
-	('K',N'Tốt','NH01', 'HK02', 'HS03'),
-	('T',N'Tốt','NH01', 'HK01', 'HS04'),
-	('T',N'Khá','NH01', 'HK02', 'HS04'),
-	('T',N'Tốt','NH01', 'HK01', 'HS05'),
-	('T',N'Tốt','NH01', 'HK02', 'HS05'),
-	('T',N'Tốt','NH01', 'HK01', 'HS06'),
-	('T',N'Khá','NH01', 'HK02', 'HS06')
+	('HK01',N'Tốt','NH01', 'HK01', 'HS01'),
+	('HK02',N'Tốt','NH01', 'HK02', 'HS01'),
+	('HK03',N'Trung Bình','NH01', 'HK01', 'HS02'),
+	('HK04',N'Yếu','NH01', 'HK02', 'HS02'),
+	('HK05',N'Tốt','NH01', 'HK01', 'HS03'),
+	('HK06',N'Tốt','NH01', 'HK02', 'HS03'),
+	('HK07',N'Tốt','NH01', 'HK01', 'HS04'),
+	('HK08',N'Khá','NH01', 'HK02', 'HS04'),
+	('HK09',N'Tốt','NH01', 'HK01', 'HS05'),
+	('HK10',N'Tốt','NH01', 'HK02', 'HS05'),
+	('HK11',N'Tốt','NH01', 'HK01', 'HS06'),
+	('HK12',N'Khá','NH01', 'HK02', 'HS06')
+DELETE HANHKIEM 
+select * from HANHKIEM
 ---Tạo view tính điểm trung bình các môn học
 CREATE VIEW Diem_Hoc_Sinh AS 
 	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,2) as DTB,hk.TenHK AS Hoc_Ky, nh.TenNH AS Nam_Hoc FROM dbo.DIEMMONHOC dmh
@@ -941,7 +946,7 @@ CREATE VIEW Diem_Hoc_Sinh AS
 
 DROP VIEW Diem_Hoc_Sinh
 
-SELECT * FROM Diem_Hoc_Sinh	
+SELECT * FROM Diem_Hoc_Sinh	where Ma_Hoc_Sinh='HS01' and  Hoc_Ky='Học kỳ 2' and Nam_Hoc ='2019-2020'
 
 -- tạo Procedure tìm kiếm điểm HS 
 GO;
@@ -972,7 +977,7 @@ SELECT hs.MaHS AS  Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh ,mh.TenMH AS Mon_Hoc ,R
 	WHERE hk.MaHK='HK01'
 GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH, nh.TenNH
 
-SELECT * FROM Diem_Hoc_Sinh_HK1
+SELECT * FROM Diem_Hoc_Sinh_HK1 where Ma_Hoc_Sinh='HS01'
 DROP VIEW Diem_Hoc_Sinh_HK1
 GO
 
@@ -1070,7 +1075,7 @@ SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,
 GROUP BY hk.TenHK,hs.MaHS, hs.TenHS,mh.TenMH, nh.TenNH
 GO
 
-SELECT * FROM Diem_Hoc_Sinh_HK2
+SELECT * FROM Diem_Hoc_Sinh_HK2 where Ma_Hoc_Sinh='HS01'
 
 DROP VIEW Diem_Hoc_Sinh_HK2
 
@@ -1268,30 +1273,35 @@ END;
 GO
 EXEC SP_BCCANAM '2019-2020','HS01';
 ---
-/*--tạo view cho form xem điểm HS 
-CREATE VIEW Diem_Hoc_Sinh AS 
-	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,1) as DTB,hk.TenHK AS Hoc_Ky, nh.TenNH AS Nam_Hoc FROM dbo.DIEMMONHOC dmh
-	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
-	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
-	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
-	JOIN HOCKY hk ON hk.MaHK = dmh.MaHK
-	JOIN LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
-	GROUP BY hs.MaHS, hk.TenHK,hs.TenHS,mh.TenMH, nh.TenNH
 
-DROP VIEW Diem_Hoc_Sinh
+-------------------------form HS xem điểm-------------------------------
+---tạo view cho form học sinh xem điểm theo học kỳ 1 hoặc 2
+CREATE VIEW XemdiemHS AS
+SELECT HOCSINH.MaHS AS Ma_Hoc_Sinh, HOCSINH.TenHS , NAMHOC.TenNH AS Nam_Hoc, 
+		HOCKY.TenHK AS Hoc_Ky,MONHOC.TenMH AS Ten_Mon_Hoc, LOAIDIEM.TenLoaiDiem, DIEMMONHOC.Diem
 
-SELECT * FROM Diem_Hoc_Sinh	
+	
+FROM DIEMMONHOC, HOCSINH, NAMHOC, HOCKY, MONHOC, LOAIDIEM
+WHERE HOCSINH.MaHS=DIEMMONHOC.MaHS 
+	AND DIEMMONHOC.MaNH=NAMHOC.MaNH
+	AND DIEMMONHOC.MaHK=HOCKY.MaHK
+	AND DIEMMONHOC.MaMH=MONHOC.MaMH
+	AND DIEMMONHOC.MaLoaiDiem=LOAIDIEM.MaLoaiDiem
+select * from XemdiemHS
+drop view XemdiemHS
 
--- tạo Procedure cho thao tác tìm kiếm trong form xem điểm HS 
+SELECT * FROM 	XemdiemHS WHERE Ma_Hoc_Sinh='HS01' AND Hoc_Ky='Học kỳ 2'
+
+-- tạo Procedure cho form học sinh xem điểm
 GO;
-ALTER PROC SP_TIMKIEM_TKDHS
+CREATE PROC SP_TIMKIEM_CHITIET
 	@TenNH char(10),
 	@TenHK char(20),
 	@MaHS char(10),
 	@TenMH nvarchar(20)
 AS
 BEGIN 
-	SELECT * FROM Diem_Hoc_Sinh
+	SELECT * FROM XemdiemHS
 	WHERE (Nam_Hoc = @TenNH OR @TenNH = '')
 	AND (Hoc_Ky= @TenHK OR @TenHK = '')
 	AND (Ma_Hoc_Sinh = @MaHS OR @MaHS = '')
@@ -1299,23 +1309,12 @@ BEGIN
 	
 END;
 GO;
-EXEC SP_TIMKIEM_TKDHS '', '', '', N'Toán';
----Tạo view form xem chi tiết điểm của hs
 
-CREATE VIEW Chi_tiet_Diem_Hoc_Sinh AS 
-	SELECT hs.MaHS AS Ma_Hoc_Sinh, hs.TenHS AS Ten_Hoc_Sinh,mh.TenMH AS Ten_Mon_Hoc,ROUND(SUM(dmh.Diem*ld.HeSo)/7,1) as DTB,hk.TenHK AS Hoc_Ky, nh.TenNH AS Nam_Hoc FROM dbo.DIEMMONHOC dmh
-	JOIN NAMHOC nh ON nh.MaNH = dmh.MaNH
-	JOIN HOCSINH hs ON hs.MaHS = dmh.MaHS
-	JOIN MONHOC mh ON mh.MaMH = dmh.MaMH
-	JOIN HOCKY hk ON hk.MaHK = dmh.MaHK
-	JOIN LOAIDIEM ld ON ld.MaLoaiDiem = dmh.MaLoaiDiem
-	GROUP BY hs.MaHS, hk.TenHK,hs.TenHS,mh.TenMH, nh.TenNH
-
-DROP VIEW Diem_Hoc_Sinh
-
-SELECT * FROM Diem_Hoc_Sinh	
-
-select DIEMMON
-*/
-
-
+---tính điểm trung bình các môn cả năm
+create view vm_tinhdiem as
+select tb1.Ma_Hoc_Sinh, tb1.Ten_Hoc_Sinh, tb1.Mon_Hoc, tb1.Nam_Hoc, ROUND((tb2.DTBM_HK2*2+tb1.DTBM_HK1)/3,1) as diem
+from Diem_Hoc_Sinh_HK1 tb1
+join Diem_Hoc_Sinh_HK2 tb2 on tb1.Ma_Hoc_Sinh=tb2.Ma_Hoc_Sinh and tb1.Mon_Hoc=tb2.Ten_Mon_Hoc and tb1.Nam_Hoc=tb2.Nam_Hoc
+	
+select* from vm_tinhdiem where Ma_Hoc_Sinh='HS01'
+drop view vm_tinhdiem

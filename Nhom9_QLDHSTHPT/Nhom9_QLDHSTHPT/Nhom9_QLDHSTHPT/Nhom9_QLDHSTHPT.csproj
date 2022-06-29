@@ -95,11 +95,29 @@
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHSXemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHSXemDiem.Designer.cs">
+      <DependentUpon>FrmHSXemDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhapDiem.Designer.cs">
+      <DependentUpon>FrmNhapDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhapHanhKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhapHanhKiem.Designer.cs">
+      <DependentUpon>FrmNhapHanhKiem.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmThongKeDiemHS.cs">
       <SubType>Form</SubType>
@@ -141,8 +159,17 @@
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmHSXemDiem.resx">
+      <DependentUpon>FrmHSXemDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhapDiem.resx">
+      <DependentUpon>FrmNhapDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhapHanhKiem.resx">
+      <DependentUpon>FrmNhapHanhKiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThongKeDiemHS.resx">
       <DependentUpon>FrmThongKeDiemHS.cs</DependentUpon>
