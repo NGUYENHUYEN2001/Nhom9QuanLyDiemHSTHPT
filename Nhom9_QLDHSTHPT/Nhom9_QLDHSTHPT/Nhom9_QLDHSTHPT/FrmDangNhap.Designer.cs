@@ -33,12 +33,12 @@ namespace Nhom9_QLDHSTHPT
             this.butDangNhap = new System.Windows.Forms.Button();
             this.radHS = new System.Windows.Forms.RadioButton();
             this.radGV = new System.Windows.Forms.RadioButton();
-            this.txtMK = new System.Windows.Forms.TextBox();
             this.txtTenDN = new System.Windows.Forms.TextBox();
             this.lblMK = new System.Windows.Forms.Label();
             this.lblTenDN = new System.Windows.Forms.Label();
             this.lblthpt = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtMK = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // butThoat
@@ -46,8 +46,8 @@ namespace Nhom9_QLDHSTHPT
             this.butThoat.BackColor = System.Drawing.SystemColors.HighlightText;
             this.butThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butThoat.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.butThoat.Location = new System.Drawing.Point(355, 239);
-            this.butThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butThoat.Location = new System.Drawing.Point(397, 240);
+            this.butThoat.Margin = new System.Windows.Forms.Padding(4);
             this.butThoat.Name = "butThoat";
             this.butThoat.Size = new System.Drawing.Size(124, 47);
             this.butThoat.TabIndex = 24;
@@ -60,8 +60,8 @@ namespace Nhom9_QLDHSTHPT
             this.butDangNhap.BackColor = System.Drawing.SystemColors.HighlightText;
             this.butDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butDangNhap.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.butDangNhap.Location = new System.Drawing.Point(137, 239);
-            this.butDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butDangNhap.Location = new System.Drawing.Point(201, 239);
+            this.butDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.butDangNhap.Name = "butDangNhap";
             this.butDangNhap.Size = new System.Drawing.Size(124, 47);
             this.butDangNhap.TabIndex = 25;
@@ -73,8 +73,8 @@ namespace Nhom9_QLDHSTHPT
             // 
             this.radHS.AutoSize = true;
             this.radHS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radHS.Location = new System.Drawing.Point(355, 186);
-            this.radHS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radHS.Location = new System.Drawing.Point(221, 177);
+            this.radHS.Margin = new System.Windows.Forms.Padding(4);
             this.radHS.Name = "radHS";
             this.radHS.Size = new System.Drawing.Size(88, 22);
             this.radHS.TabIndex = 22;
@@ -86,8 +86,8 @@ namespace Nhom9_QLDHSTHPT
             // 
             this.radGV.AutoSize = true;
             this.radGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radGV.Location = new System.Drawing.Point(160, 186);
-            this.radGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radGV.Location = new System.Drawing.Point(367, 177);
+            this.radGV.Margin = new System.Windows.Forms.Padding(4);
             this.radGV.Name = "radGV";
             this.radGV.Size = new System.Drawing.Size(91, 22);
             this.radGV.TabIndex = 23;
@@ -95,19 +95,10 @@ namespace Nhom9_QLDHSTHPT
             this.radGV.Text = "Giáo viên";
             this.radGV.UseVisualStyleBackColor = true;
             // 
-            // txtMK
-            // 
-            this.txtMK.Location = new System.Drawing.Point(201, 129);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.PasswordChar = '*';
-            this.txtMK.Size = new System.Drawing.Size(356, 22);
-            this.txtMK.TabIndex = 20;
-            // 
             // txtTenDN
             // 
             this.txtTenDN.Location = new System.Drawing.Point(201, 87);
-            this.txtTenDN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenDN.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(356, 22);
             this.txtTenDN.TabIndex = 21;
@@ -154,23 +145,30 @@ namespace Nhom9_QLDHSTHPT
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 16;
             // 
+            // txtMK
+            // 
+            this.txtMK.Location = new System.Drawing.Point(201, 127);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(355, 22);
+            this.txtMK.TabIndex = 26;
+            // 
             // FrmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(635, 300);
+            this.Controls.Add(this.txtMK);
             this.Controls.Add(this.butThoat);
             this.Controls.Add(this.butDangNhap);
             this.Controls.Add(this.radHS);
             this.Controls.Add(this.radGV);
-            this.Controls.Add(this.txtMK);
             this.Controls.Add(this.txtTenDN);
             this.Controls.Add(this.lblMK);
             this.Controls.Add(this.lblTenDN);
             this.Controls.Add(this.lblthpt);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập hệ thống";
@@ -186,11 +184,11 @@ namespace Nhom9_QLDHSTHPT
         private System.Windows.Forms.Button butDangNhap;
         private System.Windows.Forms.RadioButton radHS;
         private System.Windows.Forms.RadioButton radGV;
-        private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.TextBox txtTenDN;
         private System.Windows.Forms.Label lblMK;
         private System.Windows.Forms.Label lblTenDN;
         private System.Windows.Forms.Label lblthpt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMK;
     }
 }

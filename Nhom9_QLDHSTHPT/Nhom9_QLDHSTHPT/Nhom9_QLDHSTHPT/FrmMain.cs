@@ -109,5 +109,86 @@ namespace Nhom9_QLDHSTHPT
             Form frmtths = new FrmThongTinHocSinh();
             frmtths.Show();
         }
+
+        private void toolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+        Ketnoi_csdl ketnoi = new Ketnoi_csdl();
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            txtHomeName.Visible = false;
+            DataTable dta = new DataTable();
+            string sql = "";
+
+            if (Globals.STATUS == 0)
+            {
+                mnudanhgiahk.Visible = false;
+                mnunhapdiem.Visible = false;
+                mnutongquat.Visible = false;
+                mnuchitiet.Visible = false;
+                mnubaocao.Visible = false;
+                mnuTTHS.Visible = false;
+                sql = "SELECT TenHS AS Name FROM HOCSINH WHERE MaHS = '" + Globals.USER_ID + "'";
+            }
+            else
+            {
+                mnuxemdiem.Visible = false;
+                sql = "SELECT TenGV AS Name FROM GIAOVIEN WHERE MaGV = '" + Globals.USER_ID + "'";
+            }
+
+            dta = ketnoi.Lay_Dulieu(sql);
+            txtHomeName.DataBindings.Clear();
+            txtHomeName.DataBindings.Add("Text", dta, "Name");
+            lblNameUser.Text = txtHomeName.Text;
+        }
+
+        private void mnunhapdiem_Click(object sender, EventArgs e)
+        {
+            Form frmnd = new FrmNhapDiem();
+            frmnd.Show();
+        }
+
+        private void mnudanhgiahk_Click(object sender, EventArgs e)
+        {
+            Form frmhk = new FrmNhapHanhKiem();
+            frmhk.Show();
+        }
+
+        private void mnutongquat_Click(object sender, EventArgs e)
+        {
+            Form frmtq = new FrmThongKeDiemHS();
+            frmtq.Show();
+        }
+
+        private void mnuchitiet_Click(object sender, EventArgs e)
+        {
+            //Form frmtths = new frm();
+           // frmtths.Show();
+        }
+
+        private void mnubaocao_Click(object sender, EventArgs e)
+        {
+            Form frmtbc = new FrmBaoCaoDiemHS();
+            frmtbc.Show();
+        }
+
+        private void mnuxemdiem_Click(object sender, EventArgs e)
+        {
+            Form frmxd = new FrmHSXemDiem();
+            frmxd.Show();
+        }
+
+        private void mnudangxuat_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Bạn có chắn chắn muốn thoát khỏi chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (rs == DialogResult.Yes)
+            {
+                Form frm1 = new FrmDangNhap();
+                this.Close();
+                frm1.Show();
+            }
+        }
     }
 }
