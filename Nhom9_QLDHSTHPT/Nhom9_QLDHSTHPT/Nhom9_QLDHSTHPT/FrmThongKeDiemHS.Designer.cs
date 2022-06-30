@@ -78,8 +78,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btntk3
             // 
-            this.btntk3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btntk3.ForeColor = System.Drawing.SystemColors.Info;
+            this.btntk3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btntk3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntk3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btntk3.Location = new System.Drawing.Point(100, 172);
             this.btntk3.Name = "btntk3";
             this.btntk3.Size = new System.Drawing.Size(117, 36);
@@ -120,6 +121,7 @@ namespace Nhom9_QLDHSTHPT
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(65, 271);
             this.dataGridView1.Name = "dataGridView1";
@@ -150,8 +152,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.button1.ForeColor = System.Drawing.SystemColors.Info;
+            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button1.Location = new System.Drawing.Point(999, 572);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 36);
@@ -169,8 +172,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btntk2
             // 
-            this.btntk2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btntk2.ForeColor = System.Drawing.SystemColors.Info;
+            this.btntk2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btntk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntk2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btntk2.Location = new System.Drawing.Point(350, 49);
             this.btntk2.Name = "btntk2";
             this.btntk2.Size = new System.Drawing.Size(117, 36);
@@ -217,8 +221,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btntk1
             // 
-            this.btntk1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btntk1.ForeColor = System.Drawing.SystemColors.Info;
+            this.btntk1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btntk1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntk1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btntk1.Location = new System.Drawing.Point(338, 49);
             this.btntk1.Name = "btntk1";
             this.btntk1.Size = new System.Drawing.Size(117, 36);
@@ -287,6 +292,7 @@ namespace Nhom9_QLDHSTHPT
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmThongKeDiemHS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmThongKeDiemHS";
             this.Load += new System.EventHandler(this.FrmThongKeDiemHS_Load);
             this.groupBox3.ResumeLayout(false);

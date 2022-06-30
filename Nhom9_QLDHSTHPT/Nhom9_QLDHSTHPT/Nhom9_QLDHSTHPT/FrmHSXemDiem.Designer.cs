@@ -77,10 +77,13 @@ namespace Nhom9_QLDHSTHPT
             this.groupBox2.TabIndex = 81;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm dtbhk";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // bnttk
             // 
-            this.bnttk.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bnttk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.bnttk.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnttk.ForeColor = System.Drawing.SystemColors.Highlight;
             this.bnttk.Location = new System.Drawing.Point(374, 56);
             this.bnttk.Name = "bnttk";
             this.bnttk.Size = new System.Drawing.Size(104, 47);
@@ -187,7 +190,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btntk
             // 
-            this.btntk.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btntk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btntk.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntk.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btntk.Location = new System.Drawing.Point(412, 56);
             this.btntk.Name = "btntk";
             this.btntk.Size = new System.Drawing.Size(102, 40);
@@ -235,12 +240,15 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btnthoat
             // 
+            this.btnthoat.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthoat.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnthoat.Location = new System.Drawing.Point(1152, 162);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(102, 36);
             this.btnthoat.TabIndex = 62;
             this.btnthoat.Text = "Thoát";
-            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // label1
@@ -255,6 +263,7 @@ namespace Nhom9_QLDHSTHPT
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(22, 285);
             this.dataGridView1.Name = "dataGridView1";
@@ -281,7 +290,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btntracuugr3
             // 
-            this.btntracuugr3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btntracuugr3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btntracuugr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntracuugr3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btntracuugr3.Location = new System.Drawing.Point(91, 226);
             this.btntracuugr3.Name = "btntracuugr3";
             this.btntracuugr3.Size = new System.Drawing.Size(102, 40);
@@ -363,6 +374,7 @@ namespace Nhom9_QLDHSTHPT
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnthoat);
             this.Name = "FrmHSXemDiem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHSXemDiem";
             this.Load += new System.EventHandler(this.FrmHSXemDiem_Load);
             this.groupBox2.ResumeLayout(false);

@@ -114,7 +114,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btnthoat
             // 
-            this.btnthoat.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnthoat.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthoat.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnthoat.Location = new System.Drawing.Point(1000, 583);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(120, 50);
@@ -125,7 +127,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btnxoa
             // 
-            this.btnxoa.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnxoa.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxoa.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnxoa.Location = new System.Drawing.Point(1000, 518);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(120, 50);
@@ -136,7 +140,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btnsua
             // 
-            this.btnsua.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnsua.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsua.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnsua.Location = new System.Drawing.Point(1000, 462);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(120, 50);
@@ -147,7 +153,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btnluu
             // 
-            this.btnluu.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnluu.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnluu.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnluu.Location = new System.Drawing.Point(1000, 406);
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(120, 50);
@@ -158,7 +166,9 @@ namespace Nhom9_QLDHSTHPT
             // 
             // btntaomoi
             // 
-            this.btntaomoi.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btntaomoi.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btntaomoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntaomoi.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btntaomoi.Location = new System.Drawing.Point(1000, 339);
             this.btntaomoi.Name = "btntaomoi";
             this.btntaomoi.Size = new System.Drawing.Size(120, 50);
@@ -169,6 +179,7 @@ namespace Nhom9_QLDHSTHPT
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(68, 326);
             this.dataGridView1.Name = "dataGridView1";
@@ -234,6 +245,7 @@ namespace Nhom9_QLDHSTHPT
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "FrmNhapHanhKiem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNhapHanhKiem";
             this.Load += new System.EventHandler(this.FrmNhapHanhKiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -163,8 +163,8 @@ namespace Nhom9_QLDHSTHPT
 
         private void mnuchitiet_Click(object sender, EventArgs e)
         {
-            //Form frmtths = new frm();
-           // frmtths.Show();
+           Form frmctd = new FrmChiTietDiem();
+           frmctd.Show();
         }
 
         private void mnubaocao_Click(object sender, EventArgs e)

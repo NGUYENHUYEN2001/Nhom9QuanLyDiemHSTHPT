@@ -17,11 +17,9 @@ namespace Nhom9_QLDHSTHPT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-<<<<<<< HEAD
-            Application.Run(new FrmDangNhap());
-=======
+
             Application.Run(new FrmChiTietDiem());
->>>>>>> phamduchuy
+
 
         }
     }

@@ -73,6 +73,13 @@ namespace Nhom9_QLDHSTHPT
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuQLD = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTTHS = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnunhapdiem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudanhgiahk = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnutongquat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuchitiet = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnubaocao = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuxemdiem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnudangxuat = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -85,13 +92,6 @@ namespace Nhom9_QLDHSTHPT
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mnunhapdiem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnudanhgiahk = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnutongquat = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuchitiet = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnubaocao = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuxemdiem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnudangxuat = new System.Windows.Forms.ToolStripMenuItem();
             this.txtHomeName = new System.Windows.Forms.TextBox();
             this.lblNameUser = new System.Windows.Forms.Label();
             this.menuStrip.SuspendLayout();
@@ -113,7 +113,7 @@ namespace Nhom9_QLDHSTHPT
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1248, 30);
+            this.menuStrip.Size = new System.Drawing.Size(1248, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -463,6 +463,55 @@ namespace Nhom9_QLDHSTHPT
             this.mnuTTHS.Text = "Thông tin học sinh";
             this.mnuTTHS.Click += new System.EventHandler(this.mnuTTHS_Click);
             // 
+            // mnunhapdiem
+            // 
+            this.mnunhapdiem.Name = "mnunhapdiem";
+            this.mnunhapdiem.Size = new System.Drawing.Size(260, 26);
+            this.mnunhapdiem.Text = "Nhập điểm học sinh";
+            this.mnunhapdiem.Click += new System.EventHandler(this.mnunhapdiem_Click);
+            // 
+            // mnudanhgiahk
+            // 
+            this.mnudanhgiahk.Name = "mnudanhgiahk";
+            this.mnudanhgiahk.Size = new System.Drawing.Size(260, 26);
+            this.mnudanhgiahk.Text = "Đánh giá hạnh kiểm";
+            this.mnudanhgiahk.Click += new System.EventHandler(this.mnudanhgiahk_Click);
+            // 
+            // mnutongquat
+            // 
+            this.mnutongquat.Name = "mnutongquat";
+            this.mnutongquat.Size = new System.Drawing.Size(260, 26);
+            this.mnutongquat.Text = "Tìm kiếm điểm tổng quát";
+            this.mnutongquat.Click += new System.EventHandler(this.mnutongquat_Click);
+            // 
+            // mnuchitiet
+            // 
+            this.mnuchitiet.Name = "mnuchitiet";
+            this.mnuchitiet.Size = new System.Drawing.Size(260, 26);
+            this.mnuchitiet.Text = "Tìm kiếm điểm chi tiết";
+            this.mnuchitiet.Click += new System.EventHandler(this.mnuchitiet_Click);
+            // 
+            // mnubaocao
+            // 
+            this.mnubaocao.Name = "mnubaocao";
+            this.mnubaocao.Size = new System.Drawing.Size(260, 26);
+            this.mnubaocao.Text = "Báo cáo thống kê";
+            this.mnubaocao.Click += new System.EventHandler(this.mnubaocao_Click);
+            // 
+            // mnuxemdiem
+            // 
+            this.mnuxemdiem.Name = "mnuxemdiem";
+            this.mnuxemdiem.Size = new System.Drawing.Size(260, 26);
+            this.mnuxemdiem.Text = "Xem điểm ";
+            this.mnuxemdiem.Click += new System.EventHandler(this.mnuxemdiem_Click);
+            // 
+            // mnudangxuat
+            // 
+            this.mnudangxuat.Name = "mnudangxuat";
+            this.mnudangxuat.Size = new System.Drawing.Size(260, 26);
+            this.mnudangxuat.Text = "Đăng xuất";
+            this.mnudangxuat.Click += new System.EventHandler(this.mnudangxuat_Click);
+            // 
             // toolStrip
             // 
             this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -475,9 +524,9 @@ namespace Nhom9_QLDHSTHPT
             this.printPreviewToolStripButton,
             this.toolStripSeparator2,
             this.helpToolStripButton});
-            this.toolStrip.Location = new System.Drawing.Point(0, 30);
+            this.toolStrip.Location = new System.Drawing.Point(0, 28);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(1248, 31);
+            this.toolStrip.Size = new System.Drawing.Size(1248, 27);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             this.toolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip_ItemClicked);
@@ -566,55 +615,6 @@ namespace Nhom9_QLDHSTHPT
             this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // mnunhapdiem
-            // 
-            this.mnunhapdiem.Name = "mnunhapdiem";
-            this.mnunhapdiem.Size = new System.Drawing.Size(260, 26);
-            this.mnunhapdiem.Text = "Nhập điểm học sinh";
-            this.mnunhapdiem.Click += new System.EventHandler(this.mnunhapdiem_Click);
-            // 
-            // mnudanhgiahk
-            // 
-            this.mnudanhgiahk.Name = "mnudanhgiahk";
-            this.mnudanhgiahk.Size = new System.Drawing.Size(260, 26);
-            this.mnudanhgiahk.Text = "Đánh giá hạnh kiểm";
-            this.mnudanhgiahk.Click += new System.EventHandler(this.mnudanhgiahk_Click);
-            // 
-            // mnutongquat
-            // 
-            this.mnutongquat.Name = "mnutongquat";
-            this.mnutongquat.Size = new System.Drawing.Size(260, 26);
-            this.mnutongquat.Text = "Tìm kiếm điểm tổng quát";
-            this.mnutongquat.Click += new System.EventHandler(this.mnutongquat_Click);
-            // 
-            // mnuchitiet
-            // 
-            this.mnuchitiet.Name = "mnuchitiet";
-            this.mnuchitiet.Size = new System.Drawing.Size(260, 26);
-            this.mnuchitiet.Text = "Tìm kiếm điểm chi tiết";
-            this.mnuchitiet.Click += new System.EventHandler(this.mnuchitiet_Click);
-            // 
-            // mnubaocao
-            // 
-            this.mnubaocao.Name = "mnubaocao";
-            this.mnubaocao.Size = new System.Drawing.Size(260, 26);
-            this.mnubaocao.Text = "Báo cáo thống kê";
-            this.mnubaocao.Click += new System.EventHandler(this.mnubaocao_Click);
-            // 
-            // mnuxemdiem
-            // 
-            this.mnuxemdiem.Name = "mnuxemdiem";
-            this.mnuxemdiem.Size = new System.Drawing.Size(260, 26);
-            this.mnuxemdiem.Text = "Xem điểm ";
-            this.mnuxemdiem.Click += new System.EventHandler(this.mnuxemdiem_Click);
-            // 
-            // mnudangxuat
-            // 
-            this.mnudangxuat.Name = "mnudangxuat";
-            this.mnudangxuat.Size = new System.Drawing.Size(260, 26);
-            this.mnudangxuat.Text = "Đăng xuất";
-            this.mnudangxuat.Click += new System.EventHandler(this.mnudangxuat_Click);
-            // 
             // txtHomeName
             // 
             this.txtHomeName.Location = new System.Drawing.Point(967, 3);
@@ -625,6 +625,7 @@ namespace Nhom9_QLDHSTHPT
             // lblNameUser
             // 
             this.lblNameUser.AutoSize = true;
+            this.lblNameUser.BackColor = System.Drawing.SystemColors.Control;
             this.lblNameUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblNameUser.Location = new System.Drawing.Point(736, 4);
             this.lblNameUser.Name = "lblNameUser";
@@ -636,6 +637,7 @@ namespace Nhom9_QLDHSTHPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1248, 573);
             this.Controls.Add(this.lblNameUser);
             this.Controls.Add(this.txtHomeName);
@@ -644,7 +646,7 @@ namespace Nhom9_QLDHSTHPT
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
