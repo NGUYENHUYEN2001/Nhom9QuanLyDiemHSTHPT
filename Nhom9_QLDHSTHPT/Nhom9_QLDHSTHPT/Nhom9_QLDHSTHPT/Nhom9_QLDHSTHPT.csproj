@@ -71,12 +71,6 @@
       <DependentUpon>bcnamhoc.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBaoCaoDiemHS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,9 +140,6 @@
     <EmbeddedResource Include="bcnamhoc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>bcnamhoc.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBaoCaoDiemHS.resx">
       <DependentUpon>FrmBaoCaoDiemHS.cs</DependentUpon>

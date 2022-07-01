@@ -88,7 +88,7 @@ namespace Nhom9_QLDHSTHPT
 
             if (doc_dl.Read() == true)
             {
-                MessageBox.Show("Mã chức vụ này đã tồn tại, nhập lại mã khác", "Thông báo");
+                MessageBox.Show("Mã học sinh này đã tồn tại, nhập lại mã khác", "Thông báo");
                 txtMaHS.Focus();
                 doc_dl.Close();
                 doc_dl.Dispose();

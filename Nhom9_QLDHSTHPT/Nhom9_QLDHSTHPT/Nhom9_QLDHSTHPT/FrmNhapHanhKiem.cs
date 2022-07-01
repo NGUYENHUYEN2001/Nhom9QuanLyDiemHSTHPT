@@ -118,9 +118,14 @@ namespace Nhom9_QLDHSTHPT
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            string sqlxoa = "Delete From HANHKIEM where MaHanhKiem = '" + txtmahk.Text + "' and MaNH= '" + cbomanh.Text + "' and MaHK='" + cbomahk.Text + "' and MaHS='" + cbomahs.Text + "'";
-            ketnoi.Execute(sqlxoa);
-            LAYBANG_HANHKIEM();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn xóa dữ liệu này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (thongbao == DialogResult.Yes)
+            {
+                string sqlxoa = "Delete From HANHKIEM where MaHanhKiem = '" + txtmahk.Text + "' and MaNH= '" + cbomanh.Text + "' and MaHK='" + cbomahk.Text + "' and MaHS='" + cbomahs.Text + "'";
+                ketnoi.Execute(sqlxoa);
+                LAYBANG_HANHKIEM();
+            }
         }
 
         private void btnthoat_Click(object sender, EventArgs e)

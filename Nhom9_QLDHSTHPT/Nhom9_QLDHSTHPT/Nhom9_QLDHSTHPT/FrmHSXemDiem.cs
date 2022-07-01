@@ -198,5 +198,10 @@ namespace Nhom9_QLDHSTHPT
             }
             dataGridView1.DataSource = dta;
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

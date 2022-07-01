@@ -35,7 +35,7 @@ namespace Nhom9_QLDHSTHPT
             string passw = txtMK.Text;
             int status = (radGV.Checked == true) ? 1 : 0;
 
-            string sql_login = "select [Username], MatKhau from DANGNHAP where [Username] = '" + username + "' and MatKhau = '" + passw + "' and [Status] = " + status;
+            string sql_login = "select [Username], [MatKhau] from [DANGNHAP] where [Username] = '" + username + "' and [MatKhau] = '" + passw + "' and [Status] = " + status;
 
             SqlCommand cmd = new SqlCommand(sql_login, ketnoi.cnn);
             SqlDataReader datRed = cmd.ExecuteReader();
